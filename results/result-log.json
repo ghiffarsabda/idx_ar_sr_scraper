@@ -324,5 +324,117 @@
       "curl -sL -o 'results/pdfs/ABBA_AR_2022.pdf' 'https://www.mahakax.com/wp-content/uploads/2023/04/ANNUAL-REPORT-2022-PT-Mahaka-Media-Tbk-2022.pdf'",
       "curl -sL -o 'results/pdfs/ABBA_AR_2021.pdf' 'https://www.mahakax.com/wp-content/uploads/2022/07/2021-Annual-Report-PT-Mahaka-Media-Tbk.pdf'"
     ]
+  },
+  {
+    "ticker": "ABMM",
+    "company_name": "ABM Investama Tbk",
+    "website": "https://www.abm-investama.com",
+    "status": "completed",
+    "reports_found": [
+      {
+        "year": 2025,
+        "report_type": "Annual Report",
+        "title": "2025 Annual Report - Reinforcing Platforms for Sustainable Growth",
+        "url": "https://www.abm-investama.com/upload/Annual_Report_ABM_2025_full_Low_Res.pdf",
+        "filename": "ABMM_AR_2025.pdf"
+      },
+      {
+        "year": 2024,
+        "report_type": "Annual Report",
+        "title": "2024 Annual Report - Reinforcing Platform for Sustainable Growth Story",
+        "url": "https://www.abm-investama.com/upload/ABM_-_AR_2024_-_250425.pdf",
+        "filename": "ABMM_AR_2024.pdf"
+      },
+      {
+        "year": 2023,
+        "report_type": "Annual Report",
+        "title": "2023 Annual Report - Solid Performance Towards Business Sustainability",
+        "url": "https://www.abm-investama.com/upload/Laporan_Tahunan_Tahun_Buku_2023_PT_ABM_Investama_Tbk_-_Lowres.pdf",
+        "filename": "ABMM_AR_2023.pdf"
+      },
+      {
+        "year": 2022,
+        "report_type": "Annual Report",
+        "title": "2022 Annual Report - Strategic Move Towards Sustainability",
+        "url": "https://www.abm-investama.com/upload/AR_ABM_2022_05052023_versifull_hiresLK.pdf",
+        "filename": "ABMM_AR_2022.pdf"
+      },
+      {
+        "year": 2021,
+        "report_type": "Annual Report",
+        "title": "2021 Annual Report - Seize the Momentum Towards the Next Level of Growth",
+        "url": "https://www.abm-investama.com/upload/2021_AR_-_Seize_the_Momentum_Towards_the_Next_Level_of_Growth.pdf",
+        "filename": "ABMM_AR_2021.pdf"
+      },
+      {
+        "year": 2020,
+        "report_type": "Annual Report",
+        "title": "2020 Annual Report - Agile Operations in Overcoming Challenges",
+        "url": "https://www.abm-investama.com/upload/2020_Laporan_Tahunan_-_Tangkas_Mengatasi_Tantangan.pdf",
+        "filename": "ABMM_AR_2020.pdf"
+      },
+      {
+        "year": 2019,
+        "report_type": "Annual Report",
+        "title": "2019 Annual Report - Integrated Value Chain for Sustainable Business",
+        "url": "https://www.abm-investama.com/upload/2019-Annual-Report-Integrated-Value-Chain-for-Sustainable-Business.pdf",
+        "filename": "ABMM_AR_2019.pdf"
+      },
+      {
+        "year": 2018,
+        "report_type": "Annual Report",
+        "title": "2018 Annual Report - Strengthening Synergy, Advancing Core Business",
+        "url": "https://www.abm-investama.com/upload/2018_Laporan_Tahunan_-_Memperkuat_Sinergi_Memajukan_Bisnis_Inti.pdf",
+        "filename": "ABMM_AR_2018.pdf"
+      },
+      {
+        "year": 2017,
+        "report_type": "Annual Report",
+        "title": "2017 Annual Report - Creating a Solid Platform for Sustainable Growth",
+        "url": "https://www.abm-investama.com/upload/2017_annual_report_menciptakan_platform_yang_solid_untuk_pertumbuhan_yang_berkelanjutan.pdf",
+        "filename": "ABMM_AR_2017.pdf"
+      },
+      {
+        "year": 2016,
+        "report_type": "Annual Report",
+        "title": "2016 Annual Report - Progressing Towards Sustainable Future",
+        "url": "https://www.abm-investama.com/upload/2016_annual_report_menuju_masa_depan_yang_berkelanjutan.pdf",
+        "filename": "ABMM_AR_2016.pdf"
+      },
+      {
+        "year": 2015,
+        "report_type": "Annual Report",
+        "title": "2015 Annual Report - Driven Towards Transformative Growth",
+        "url": "https://www.abm-investama.com/upload/2015_annual_report_-_mendorong_pertumbuhan_transformatif.pdf",
+        "filename": "ABMM_AR_2015.pdf"
+      }
+    ],
+    "years_found": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "years_missing": [],
+    "curl_commands": [
+      "curl -sL -o 'results/pdfs/ABMM_AR_2025.pdf' 'https://www.abm-investama.com/upload/Annual_Report_ABM_2025_full_Low_Res.pdf'",
+      "curl -sL -o 'results/pdfs/ABMM_AR_2024.pdf' 'https://www.abm-investama.com/upload/ABM_-_AR_2024_-_250425.pdf'",
+      "curl -sL -o 'results/pdfs/ABMM_AR_2023.pdf' 'https://www.abm-investama.com/upload/Laporan_Tahunan_Tahun_Buku_2023_PT_ABM_Investama_Tbk_-_Lowres.pdf'",
+      "curl -sL -o 'results/pdfs/ABMM_AR_2022.pdf' 'https://www.abm-investama.com/upload/AR_ABM_2022_05052023_versifull_hiresLK.pdf'",
+      "curl -sL -o 'results/pdfs/ABMM_AR_2021.pdf' 'https://www.abm-investama.com/upload/2021_AR_-_Seize_the_Momentum_Towards_the_Next_Level_of_Growth.pdf'",
+      "curl -sL -o 'results/pdfs/ABMM_AR_2020.pdf' 'https://www.abm-investama.com/upload/2020_Laporan_Tahunan_-_Tangkas_Mengatasi_Tantangan.pdf'",
+      "curl -sL -o 'results/pdfs/ABMM_AR_2019.pdf' 'https://www.abm-investama.com/upload/2019-Annual-Report-Integrated-Value-Chain-for-Sustainable-Business.pdf'",
+      "curl -sL -o 'results/pdfs/ABMM_AR_2018.pdf' 'https://www.abm-investama.com/upload/2018_Laporan_Tahunan_-_Memperkuat_Sinergi_Memajukan_Bisnis_Inti.pdf'",
+      "curl -sL -o 'results/pdfs/ABMM_AR_2017.pdf' 'https://www.abm-investama.com/upload/2017_annual_report_menciptakan_platform_yang_solid_untuk_pertumbuhan_yang_berkelanjutan.pdf'",
+      "curl -sL -o 'results/pdfs/ABMM_AR_2016.pdf' 'https://www.abm-investama.com/upload/2016_annual_report_menuju_masa_depan_yang_berkelanjutan.pdf'",
+      "curl -sL -o 'results/pdfs/ABMM_AR_2015.pdf' 'https://www.abm-investama.com/upload/2015_annual_report_-_mendorong_pertumbuhan_transformatif.pdf'"
+    ]
   }
 ]

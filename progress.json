@@ -1,14 +1,8 @@
 {
-  "AALI": {
+  "ABMM": {
     "status": "completed",
-    "years_found": [2021, 2022, 2023, 2024, 2025],
-    "years_missing": [2015, 2016, 2017, 2018, 2019, 2020],
-    "last_updated": "2026-07-22T17:25:00.000Z"
-  },
-  "ABBA": {
-    "status": "completed",
-    "years_found": [2021, 2022, 2023, 2024, 2025],
-    "years_missing": [2015, 2016, 2017, 2018, 2019, 2020],
-    "last_updated": "2026-07-22T17:25:00.000Z"
+    "years_found": [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
+    "years_missing": [],
+    "timestamp": "2026-07-22T17:25:00Z"
   }
 }

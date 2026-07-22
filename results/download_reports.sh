@@ -45,3 +45,39 @@ curl -sL -o 'results/pdfs/ABBA_AR_2022.pdf' 'https://www.mahakax.com/wp-content/
 
 # 2021 Annual Report
 curl -sL -o 'results/pdfs/ABBA_AR_2021.pdf' 'https://www.mahakax.com/wp-content/uploads/2022/07/2021-Annual-Report-PT-Mahaka-Media-Tbk.pdf'
+
+#!/bin/bash
+# ABMM Annual Report PDF URLs
+
+# 2025 Annual Report - Reinforcing Platforms for Sustainable Growth
+curl -sL -o 'results/pdfs/ABMM_AR_2025.pdf' 'https://www.abm-investama.com/upload/Annual_Report_ABM_2025_full_Low_Res.pdf'
+
+# 2024 Annual Report - Reinforcing Platform for Sustainable Growth Story
+curl -sL -o 'results/pdfs/ABMM_AR_2024.pdf' 'https://www.abm-investama.com/upload/ABM_-_AR_2024_-_250425.pdf'
+
+# 2023 Annual Report - Solid Performance Towards Business Sustainability
+curl -sL -o 'results/pdfs/ABMM_AR_2023.pdf' 'https://www.abm-investama.com/upload/Laporan_Tahunan_Tahun_Buku_2023_PT_ABM_Investama_Tbk_-_Lowres.pdf'
+
+# 2022 Annual Report - Strategic Move Towards Sustainability
+curl -sL -o 'results/pdfs/ABMM_AR_2022.pdf' 'https://www.abm-investama.com/upload/AR_ABM_2022_05052023_versifull_hiresLK.pdf'
+
+# 2021 Annual Report - Seize the Momentum Towards the Next Level of Growth
+curl -sL -o 'results/pdfs/ABMM_AR_2021.pdf' 'https://www.abm-investama.com/upload/2021_AR_-_Seize_the_Momentum_Towards_the_Next_Level_of_Growth.pdf'
+
+# 2020 Annual Report - Agile Operations in Overcoming Challenges
+curl -sL -o 'results/pdfs/ABMM_AR_2020.pdf' 'https://www.abm-investama.com/upload/2020_Laporan_Tahunan_-_Tangkas_Mengatasi_Tantangan.pdf'
+
+# 2019 Annual Report - Integrated Value Chain for Sustainable Business
+curl -sL -o 'results/pdfs/ABMM_AR_2019.pdf' 'https://www.abm-investama.com/upload/2019-Annual-Report-Integrated-Value-Chain-for-Sustainable-Business.pdf'
+
+# 2018 Annual Report - Strengthening Synergy, Advancing Core Business
+curl -sL -o 'results/pdfs/ABMM_AR_2018.pdf' 'https://www.abm-investama.com/upload/2018_Laporan_Tahunan_-_Memperkuat_Sinergi_Memajukan_Bisnis_Inti.pdf'
+
+# 2017 Annual Report - Creating a Solid Platform for Sustainable Growth
+curl -sL -o 'results/pdfs/ABMM_AR_2017.pdf' 'https://www.abm-investama.com/upload/2017_annual_report_menciptakan_platform_yang_solid_untuk_pertumbuhan_yang_berkelanjutan.pdf'
+
+# 2016 Annual Report - Progressing Towards Sustainable Future
+curl -sL -o 'results/pdfs/ABMM_AR_2016.pdf' 'https://www.abm-investama.com/upload/2016_annual_report_menuju_masa_depan_yang_berkelanjutan.pdf'
+
+# 2015 Annual Report - Driven Towards Transformative Growth
+curl -sL -o 'results/pdfs/ABMM_AR_2015.pdf' 'https://www.abm-investama.com/upload/2015_annual_report_-_mendorong_pertumbuhan_transformatif.pdf'
