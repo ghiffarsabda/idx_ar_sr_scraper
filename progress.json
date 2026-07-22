@@ -1,0 +1,19 @@
+{
+  "ticker": "AADI",
+  "years": {
+    "2015": "unavailable",
+    "2016": "unavailable",
+    "2017": "unavailable",
+    "2018": "unavailable",
+    "2019": "unavailable",
+    "2020": "unavailable",
+    "2021": "unavailable",
+    "2022": "unavailable",
+    "2023": "unavailable",
+    "2024": "verified",
+    "2025": "verified"
+  },
+  "completed": true,
+  "source": "https://adaroindonesia.com/pages/view/laporan-tahunan.html",
+  "script": "/home/ghiffar-sabda/pratama/handoff/results/download_reports.sh"
+}

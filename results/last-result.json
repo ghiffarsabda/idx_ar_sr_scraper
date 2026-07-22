@@ -1,0 +1,23 @@
+{
+  "ticker": "AADI",
+  "company": "PT Adaro Andalan Indonesia Tbk",
+  "website": "https://www.adaroindonesia.com/",
+  "source": "https://adaroindonesia.com/pages/view/laporan-tahunan.html",
+  "requested_years": [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
+  "reports": [
+    {
+      "year": 2024,
+      "url": "https://adaroindonesia.com/app/webroot/upload/files/Laporan%20Tahunan/AADI%20Annual%20Report%202024.pdf",
+      "status": "verified"
+    },
+    {
+      "year": 2025,
+      "url": "https://adaroindonesia.com/app/webroot/upload/files/Laporan%20Tahunan/AADI%20Annual%20Report%202025.pdf",
+      "status": "verified"
+    }
+  ],
+  "unavailable_years": [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023],
+  "note": "The official annual reports page lists AADI reports only for 2024 and 2025.",
+  "download_script": "/home/ghiffar-sabda/pratama/handoff/results/download_reports.sh",
+  "completed": true
+}
