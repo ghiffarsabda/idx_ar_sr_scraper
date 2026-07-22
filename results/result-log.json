@@ -110,5 +110,47 @@
       "curl -sL -o 'results/pdfs/ABDA_AR_2024.pdf' 'https://myoona.id/content/dam/oona/content-fragments/id/id/about-us-corporate/laporan-keuangan/tahunan/2024/Annual%20Report%20SR%202024%20OONA.pdf'",
       "curl -sL -o 'results/pdfs/ABDA_AR_2025.pdf' 'https://myoona.id/content/dam/oona/content-fragments/id/id/about-us-corporate/laporan-keuangan/tahunan/2025/Annual%20Report%20and%20Sustainability%20Report%202025.pdf'"
     ]
+  },
+  {
+    "ticker": "AADI",
+    "company_name": "PT Adaro Andalan Indonesia Tbk",
+    "website": "https://www.adaroindonesia.com/",
+    "status": "completed",
+    "reports_found": [
+      {
+        "year": 2025,
+        "report_type": "Annual Report",
+        "title": "Laporan Tahunan 2025",
+        "url": "https://adaroindonesia.com/app/webroot/upload/files/Laporan%20Tahunan/AADI%20Annual%20Report%202025.pdf",
+        "filename": "AADI_AR_2025.pdf"
+      },
+      {
+        "year": 2024,
+        "report_type": "Annual Report",
+        "title": "Laporan Tahunan 2024",
+        "url": "https://adaroindonesia.com/app/webroot/upload/files/Laporan%20Tahunan/AADI%20Annual%20Report%202024.pdf",
+        "filename": "AADI_AR_2024.pdf"
+      }
+    ],
+    "years_found": [
+      2024,
+      2025
+    ],
+    "years_missing": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "curl_commands": [
+      "curl -sL -o 'results/pdfs/AADI_AR_2025.pdf' 'https://adaroindonesia.com/app/webroot/upload/files/Laporan%20Tahunan/AADI%20Annual%20Report%202025.pdf'",
+      "curl -sL -o 'results/pdfs/AADI_AR_2024.pdf' 'https://adaroindonesia.com/app/webroot/upload/files/Laporan%20Tahunan/AADI%20Annual%20Report%202024.pdf'"
+    ],
+    "notes": "PT Adaro Andalan Indonesia Tbk (AADI) was established as a separate listed entity in 2024 following the spin-off from Adaro Energy Indonesia (ADRO). Only annual reports for 2024 and 2025 are available on the company's website; no historical AADI-specific annual reports exist for 2015-2023."
   }
 ]

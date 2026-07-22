@@ -13,3 +13,6 @@ curl -sL -o 'results/pdfs/ABDA_AR_2022.pdf' 'https://myoona.id/content/dam/oona/
 curl -sL -o 'results/pdfs/ABDA_AR_2023.pdf' 'https://myoona.id/content/dam/oona/content-fragments/id/id/about-us-corporate/laporan-keuangan/tahunan/2023/Annual%20Report%20SR%202023%20OONA.pdf'
 curl -sL -o 'results/pdfs/ABDA_AR_2024.pdf' 'https://myoona.id/content/dam/oona/content-fragments/id/id/about-us-corporate/laporan-keuangan/tahunan/2024/Annual%20Report%20SR%202024%20OONA.pdf'
 curl -sL -o 'results/pdfs/ABDA_AR_2025.pdf' 'https://myoona.id/content/dam/oona/content-fragments/id/id/about-us-corporate/laporan-keuangan/tahunan/2025/Annual%20Report%20and%20Sustainability%20Report%202025.pdf'
+
+curl -sL -o 'results/pdfs/AADI_AR_2025.pdf' 'https://adaroindonesia.com/app/webroot/upload/files/Laporan%20Tahunan/AADI%20Annual%20Report%202025.pdf'
+curl -sL -o 'results/pdfs/AADI_AR_2024.pdf' 'https://adaroindonesia.com/app/webroot/upload/files/Laporan%20Tahunan/AADI%20Annual%20Report%202024.pdf'

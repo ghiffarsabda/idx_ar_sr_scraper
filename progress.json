@@ -1,8 +1,8 @@
 {
-  "ticker": "ABDA",
-  "company_name": "PT Asuransi Bina Dana Arta Tbk",
+  "ticker": "AADI",
+  "company_name": "PT Adaro Andalan Indonesia Tbk",
   "status": "completed",
-  "reports_found_count": 11,
-  "years_covered": [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
-  "source_url": "https://www.myoona.id/tentang-kami/tata-kelola-perusahaan/"
+  "reports_found_count": 2,
+  "years_covered": [2024, 2025],
+  "source_url": "https://www.adaroindonesia.com/pages/view/laporan-tahunan.html"
 }
