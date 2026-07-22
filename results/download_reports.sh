@@ -81,3 +81,15 @@ curl -sL -o 'results/pdfs/ABMM_AR_2016.pdf' 'https://www.abm-investama.com/uploa
 
 # 2015 Annual Report - Driven Towards Transformative Growth
 curl -sL -o 'results/pdfs/ABMM_AR_2015.pdf' 'https://www.abm-investama.com/upload/2015_annual_report_-_mendorong_pertumbuhan_transformatif.pdf'
+
+#!/bin/bash
+# ACES Annual Report PDFs from https://ahi.id
+curl -sL -o 'results/pdfs/ACES_AR_2025.pdf' 'https://d24vnfmq88m0qc.cloudfront.net/file/CAHI/Compro/1778061457224_17df253e-05c8-4cb9-8876-aec2a98cdf47.pdf'
+curl -sL -o 'results/pdfs/ACES_AR_2024.pdf' 'https://d24vnfmq88m0qc.cloudfront.net/file/CAHI/Compro/8b906fcb-3f06-47be-aff7-136a99b4420b.pdf'
+curl -sL -o 'results/pdfs/ACES_AR_2023.pdf' 'https://d24vnfmq88m0qc.cloudfront.net/file/CAHI/Compro/df22359e-5482-4f06-bf45-5a9ae94909d7.pdf'
+curl -sL -o 'results/pdfs/ACES_AR_2022.pdf' 'https://d24vnfmq88m0qc.cloudfront.net/file/CAHI/Compro/e98b487f-42e6-47e1-9a3a-ec8ccb56ad41.pdf'
+curl -sL -o 'results/pdfs/ACES_AR_2021.pdf' 'https://d24vnfmq88m0qc.cloudfront.net/file/CAHI/Compro/e1dee4cf-f06e-42c7-910d-ed64580a799e.pdf'
+curl -sL -o 'results/pdfs/ACES_AR_2020.pdf' 'https://d24vnfmq88m0qc.cloudfront.net/file/CAHI/Compro/756ca2f9-f738-4fa2-a33e-503cb159c9a3.pdf'
+curl -sL -o 'results/pdfs/ACES_AR_2019.pdf' 'https://d24vnfmq88m0qc.cloudfront.net/file/CAHI/Compro/9cc0f40b-01c1-4825-87f9-90b4b7546794.pdf'
+curl -sL -o 'results/pdfs/ACES_AR_2018.pdf' 'https://d24vnfmq88m0qc.cloudfront.net/file/CAHI/Compro/9b359ead-e43b-4d8f-9670-a31b1a8f8a39.pdf'
+curl -sL -o 'results/pdfs/ACES_AR_2017.pdf' 'https://d24vnfmq88m0qc.cloudfront.net/file/CAHI/Compro/3408903a-c313-4b3e-985d-7a48f68137a8.pdf'
