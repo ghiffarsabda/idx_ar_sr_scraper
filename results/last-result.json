@@ -1,100 +1,45 @@
 {
-  "ticker": "ACST",
-  "company_name": "PT Acset Indonusa Tbk.",
-  "website": "https://www.acset.co",
+  "ticker": "ADCP",
+  "company_name": "PT Adhi Commuter Properti Tbk",
+  "website": "https://adcp.co.com",
   "status": "completed",
   "reports_found": [
     {
-      "year": 2015,
+      "year": 2025,
       "report_type": "Annual Report",
-      "title": "A Great Leap to Lead Ahead (2015)",
-      "url": "https://www.acset.co/assets/file/investor/annual/A_Great_Leap_to_Lead_Ahead_(2015).pdf",
-      "filename": "ACST_AR_2015.pdf"
-    },
-    {
-      "year": 2016,
-      "report_type": "Annual Report",
-      "title": "Elevating Growth to the Next Level (2016)",
-      "url": "https://www.acset.co/assets/file/investor/annual/Elevating_Growth_to_the_Next_Level_(2016).pdf",
-      "filename": "ACST_AR_2016.pdf"
-    },
-    {
-      "year": 2017,
-      "report_type": "Annual Report",
-      "title": "Building Strong Platforms (2017)",
-      "url": "https://www.acset.co/assets/file/investor/annual/Building_Strong_Platforms_(2017).pdf",
-      "filename": "ACST_AR_2017.pdf"
-    },
-    {
-      "year": 2018,
-      "report_type": "Annual Report",
-      "title": "Exploring New Opportunities (2018)",
-      "url": "https://www.acset.co/assets/file/investor/annual/Exploring_New_Opportunities_(2018).pdf",
-      "filename": "ACST_AR_2018.pdf"
-    },
-    {
-      "year": 2019,
-      "report_type": "Annual Report",
-      "title": "Determination For Sustainable Excelence (2019)",
-      "url": "https://www.acset.co/assets/file/investor/annual/Determination_For_Sustainable_Excelence_(2019).pdf",
-      "filename": "ACST_AR_2019.pdf"
-    },
-    {
-      "year": 2020,
-      "report_type": "Annual Report",
-      "title": "Strengthening Our Commitment And Determination (2020)",
-      "url": "https://www.acset.co/assets/file/investor/annual/Strengthening_Our_Commitment_And_Determination_(2020).pdf",
-      "filename": "ACST_AR_2020.pdf"
-    },
-    {
-      "year": 2021,
-      "report_type": "Annual Report",
-      "title": "Strengthening Position By Facing_Challenges (2021)",
-      "url": "https://www.acset.co/assets/file/investor/annual/Strengthening_Position_By_Facing_Challenges_(2021).pdf",
-      "filename": "ACST_AR_2021.pdf"
-    },
-    {
-      "year": 2022,
-      "report_type": "Annual Report",
-      "title": "Building Success Through Sustainable Ways (2022)",
-      "url": "https://www.acset.co/assets/file/investor/annual/Building_Success_Through_Sustainable_Ways_(2022).pdf",
-      "filename": "ACST_AR_2022.pdf"
-    },
-    {
-      "year": 2023,
-      "report_type": "Annual Report",
-      "title": "Fostering Opportunities For Sustainable Excellence (2023)",
-      "url": "https://www.acset.co/assets/file/investor/annual/Fostering_Opportunities_For_Sustainable_Excellence_(2023)2.pdf",
-      "filename": "ACST_AR_2023.pdf"
+      "title": "Laporan Tahunan Annual Report 2025 PT Adhi Commuter Properti Tbk",
+      "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202604/038a5b4fa5_68d4ef5b5d.pdf",
+      "filename": "ADCP_AR_2025.pdf"
     },
     {
       "year": 2024,
       "report_type": "Annual Report",
-      "title": "Advancing Performance through Commitment and Perseverance, Maintaining the Spirit of Sustainability",
-      "url": "https://www.acset.co/assets/file/investor/annual/ARSR_ACSET_2024_Completed.pdf",
-      "filename": "ACST_AR_2024.pdf"
+      "title": "LAPORAN TAHUNAN ANNUAL REPORT 2024 EMPOWERING SUSTAINABLE GROWTH",
+      "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202504/ff7504306f_4582b272d4.pdf",
+      "filename": "ADCP_AR_2024.pdf"
     },
     {
-      "year": 2025,
+      "year": 2021,
       "report_type": "Annual Report",
-      "title": "Persevering Through Adversity (2025)",
-      "url": "https://www.acset.co/assets/file/investor/annual/ARSR_ACSET_2025_100426_FA_OJK.pdf",
-      "filename": "ACST_AR_2025.pdf"
+      "title": "PT Adhi Commuter Properti Tbk 2021 Annual Report",
+      "url": "https://adcp.co.id/storage/new-yearly-reports/December2023/yearly%20report.pdf",
+      "filename": "ADCP_AR_2021.pdf"
+    },
+    {
+      "year": 2020,
+      "report_type": "Annual Report",
+      "title": "2020 Annual Report",
+      "url": "https://adcp.co.id/storage/information-disclosures/September2021/ANNUAL%20REPORT%20TAHUN%202020.pdf",
+      "filename": "ADCP_AR_2020.pdf"
     }
   ],
-  "years_found": [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
-  "years_missing": [],
+  "years_found": [2020, 2021, 2024, 2025],
+  "years_missing": [2015, 2016, 2017, 2018, 2019, 2022, 2023],
   "curl_commands": [
-    "curl -sL -o 'results/pdfs/ACST_AR_2015.pdf' 'https://www.acset.co/assets/file/investor/annual/A_Great_Leap_to_Lead_Ahead_(2015).pdf'",
-    "curl -sL -o 'results/pdfs/ACST_AR_2016.pdf' 'https://www.acset.co/assets/file/investor/annual/Elevating_Growth_to_the_Next_Level_(2016).pdf'",
-    "curl -sL -o 'results/pdfs/ACST_AR_2017.pdf' 'https://www.acset.co/assets/file/investor/annual/Building_Strong_Platforms_(2017).pdf'",
-    "curl -sL -o 'results/pdfs/ACST_AR_2018.pdf' 'https://www.acset.co/assets/file/investor/annual/Exploring_New_Opportunities_(2018).pdf'",
-    "curl -sL -o 'results/pdfs/ACST_AR_2019.pdf' 'https://www.acset.co/assets/file/investor/annual/Determination_For_Sustainable_Excelence_(2019).pdf'",
-    "curl -sL -o 'results/pdfs/ACST_AR_2020.pdf' 'https://www.acset.co/assets/file/investor/annual/Strengthening_Our_Commitment_And_Determination_(2020).pdf'",
-    "curl -sL -o 'results/pdfs/ACST_AR_2021.pdf' 'https://www.acset.co/assets/file/investor/annual/Strengthening_Position_By_Facing_Challenges_(2021).pdf'",
-    "curl -sL -o 'results/pdfs/ACST_AR_2022.pdf' 'https://www.acset.co/assets/file/investor/annual/Building_Success_Through_Sustainable_Ways_(2022).pdf'",
-    "curl -sL -o 'results/pdfs/ACST_AR_2023.pdf' 'https://www.acset.co/assets/file/investor/annual/Fostering_Opportunities_For_Sustainable_Excellence_(2023)2.pdf'",
-    "curl -sL -o 'results/pdfs/ACST_AR_2024.pdf' 'https://www.acset.co/assets/file/investor/annual/ARSR_ACSET_2024_Completed.pdf'",
-    "curl -sL -o 'results/pdfs/ACST_AR_2025.pdf' 'https://www.acset.co/assets/file/investor/annual/ARSR_ACSET_2025_100426_FA_OJK.pdf'"
-  ]
+    "curl -sL -o 'results/pdfs/ADCP_AR_2025.pdf' 'https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202604/038a5b4fa5_68d4ef5b5d.pdf'",
+    "curl -sL -o 'results/pdfs/ADCP_AR_2024.pdf' 'https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202504/ff7504306f_4582b272d4.pdf'",
+    "curl -sL -o 'results/pdfs/ADCP_AR_2021.pdf' 'https://adcp.co.id/storage/new-yearly-reports/December2023/yearly%20report.pdf'",
+    "curl -sL -o 'results/pdfs/ADCP_AR_2020.pdf' 'https://adcp.co.id/storage/information-disclosures/September2021/ANNUAL%20REPORT%20TAHUN%202020.pdf'"
+  ],
+  "notes": "ADCP (PT Adhi Commuter Properti Tbk) IPO'd on IDX on February 23, 2022. Annual reports for 2022 and 2023 are not publicly available online. Reports for 2015-2019 are not available as the company was established in 2018 and IPO'd in 2022."
 }

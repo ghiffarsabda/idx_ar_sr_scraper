@@ -143,3 +143,7 @@ curl -sL -o 'results/pdfs/ACST_AR_2024.pdf' 'https://www.acset.co/assets/file/in
 
 # 2025 Annual Report
 curl -sL -o 'results/pdfs/ACST_AR_2025.pdf' 'https://www.acset.co/assets/file/investor/annual/ARSR_ACSET_2025_100426_FA_OJK.pdf'
+curl -sL -o 'results/pdfs/ADCP_AR_2025.pdf' 'https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202604/038a5b4fa5_68d4ef5b5d.pdf'
+curl -sL -o 'results/pdfs/ADCP_AR_2024.pdf' 'https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202504/ff7504306f_4582b272d4.pdf'
+curl -sL -o 'results/pdfs/ADCP_AR_2021.pdf' 'https://adcp.co.id/storage/new-yearly-reports/December2023/yearly%20report.pdf'
+curl -sL -o 'results/pdfs/ADCP_AR_2020.pdf' 'https://adcp.co.id/storage/information-disclosures/September2021/ANNUAL%20REPORT%20TAHUN%202020.pdf'
