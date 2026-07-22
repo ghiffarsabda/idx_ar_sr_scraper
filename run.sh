@@ -17,8 +17,13 @@ RESULT_LOG = os.path.join(RESULTS_DIR, "result-log.json")
 DONE_SCRIPT = os.path.join(BASE_DIR, "done.sh")
 CLEAR_SCRIPT = os.path.join(BASE_DIR, "clear.sh")
 
+# Parse command line flags
+is_fresh = "--fresh" in sys.argv or "-f" in sys.argv
+is_strict = "--strict" in sys.argv
+is_flex = "--flex" in sys.argv
+
 # Check for --fresh or -f flag to clear outputs before starting
-if "--fresh" in sys.argv or "-f" in sys.argv:
+if is_fresh:
     print("Flag --fresh detected. Resetting previous outputs...")
     if os.path.exists(CLEAR_SCRIPT):
         subprocess.run(["bash", CLEAR_SCRIPT])
@@ -30,6 +35,11 @@ if "--fresh" in sys.argv or "-f" in sys.argv:
             os.remove(LAST_RESULT)
         if os.path.exists(RESULT_LOG):
             os.remove(RESULT_LOG)
+
+if is_strict:
+    print("Flag --strict enabled: Restricting domain search strictly to official company website (30s timeout).")
+if is_flex:
+    print("Flag --flex enabled: Allowing flexible matching for report titles (e.g. Laporan Keuangan).")
 
 os.makedirs(RESULTS_DIR, exist_ok=True)
 
@@ -59,7 +69,7 @@ def get_completed_tickers():
                 if isinstance(log_data, list):
                     for entry in log_data:
                         if isinstance(entry, dict) and entry.get("ticker"):
-                            st = entry.get("status", "").lower()
+                            st = str(entry.get("status", "")).lower()
                             if st in ("completed", "done", "success") or entry.get("completed") is True:
                                 completed.add(entry["ticker"].strip())
         except Exception:
@@ -112,11 +122,25 @@ for company in companies:
     if os.path.exists(TEMP_DOWNLOAD_SCRIPT):
         os.remove(TEMP_DOWNLOAD_SCRIPT)
 
+    # Dynamic prompt variations based on --strict and --flex tags
+    strict_instruction = (
+        f"STRICT DOMAIN MODE: You MUST search ONLY on official website {website} and nowhere else (do NOT visit IDX, news, or external portals). If {website} fails to respond within 30 seconds or hangs loading, stop and mark as skipped/failed."
+        if is_strict else
+        f"SOURCE GUIDANCE: Primary target is {website}. If {website} is down or inaccessible, you may search official disclosure sources or IDX."
+    )
+
+    flex_instruction = (
+        "FLEXIBLE FILE MATCHING: Include reports with similar titles such as 'Laporan Keuangan', 'Laporan Keuangan Tahunan', 'Financial Statement', 'Laporan Tahunan & Keuangan', or similar variants."
+        if is_flex else
+        "STANDARD FILE MATCHING: Focus on Annual Reports (Laporan Tahunan) and Sustainability Reports (Laporan Keberlanjutan)."
+    )
+
     # Standardized prompt formatted dynamically
     prompt = (
         f"/agent-browser Task: find annual report PDF download URLs for {company_name} ({ticker}). "
         f"WEBSITE: {website} YEARS: 2015 to 2025 TICKER: {ticker} "
         f"DOWNLOAD_SCRIPT: {TEMP_DOWNLOAD_SCRIPT} PROGRESS_FILE: {PROGRESS_PATH} "
+        f"{strict_instruction} {flex_instruction} "
         f"Using the browser tool: 1. Navigate to website 2. Find annual reports "
         f"3. Append curl commands (curl -sL -o 'results/pdfs/{ticker}_AR_YYYY.pdf' 'URL') to {TEMP_DOWNLOAD_SCRIPT} "
         f"4. Update {PROGRESS_PATH} "

@@ -8,6 +8,10 @@ TICKER: ABDA
 DOWNLOAD_SCRIPT: /home/ghiffar-sabda/pratama/handoff/results/urls_temp.sh
 PROGRESS_FILE: /home/ghiffar-sabda/pratama/handoff/progress.json
 
+PROMPT MODIFIERS:
+- STRICT MODE (--strict): Search ONLY on official website https://www.myoona.id/. Do NOT navigate to external sites (IDX, news, journals). If site does not respond within 30 seconds or loading loops, stop and mark skipped/failed.
+- FLEX MODE (--flex): Allow matching files with similar names such as "Laporan Keuangan", "Laporan Keuangan Tahunan", "Financial Statement", "Laporan Tahunan & Keuangan".
+
 Using the browser tool:
 1. Navigate to the website
 2. Find annual reports
