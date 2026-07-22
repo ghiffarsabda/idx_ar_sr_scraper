@@ -1313,5 +1313,117 @@
       "curl -sL -o 'results/pdfs/ADES_AR_2024.pdf' 'https://akashainternational.com/wp-content/uploads/2025/04/ANNUAL-REPORT-ADES-2024.pdf'",
       "curl -sL -o 'results/pdfs/ADES_AR_2025.pdf' 'https://akashainternational.com/wp-content/uploads/2026/06/Annual-Report-2025.pdf'"
     ]
+  },
+  {
+    "ticker": "ADHI",
+    "company_name": "PT Adhi Karya (Persero) Tbk.",
+    "website": "https://www.adhi.co.id",
+    "status": "completed",
+    "reports_found": [
+      {
+        "year": 2025,
+        "report_type": "Annual Report",
+        "title": "Laporan Tahunan ADHI 2025",
+        "url": "https://adhi.co.id/wp-content/uploads/2026/06/ADHI-Annual-Report-2025.pdf",
+        "filename": "ADHI_AR_2025.pdf"
+      },
+      {
+        "year": 2024,
+        "report_type": "Annual Report",
+        "title": "Laporan Tahunan ADHI 2024",
+        "url": "https://adhi.co.id/wp-content/uploads/2025/04/BOOK-AR-ADHI-KARYA-24-1.pdf",
+        "filename": "ADHI_AR_2024.pdf"
+      },
+      {
+        "year": 2023,
+        "report_type": "Annual Report",
+        "title": "Laporan Tahunan ADHI 2023",
+        "url": "https://adhi.co.id/wp-content/uploads/2025/02/AR-ADHI-2023.pdf",
+        "filename": "ADHI_AR_2023.pdf"
+      },
+      {
+        "year": 2022,
+        "report_type": "Annual Report",
+        "title": "Laporan Tahunan ADHI 2022",
+        "url": "https://adhi.co.id/wp-content/uploads/2024/05/Laporan-Keuangan-ADHI-Karya-2022.pdf",
+        "filename": "ADHI_AR_2022.pdf"
+      },
+      {
+        "year": 2021,
+        "report_type": "Annual Report",
+        "title": "Laporan Tahunan ADHI 2021",
+        "url": "https://adhi.co.id/wp-content/uploads/2024/05/Laporan-Keuangan-ADHI-Karya-2021.pdf",
+        "filename": "ADHI_AR_2021.pdf"
+      },
+      {
+        "year": 2020,
+        "report_type": "Annual Report",
+        "title": "Laporan Tahunan ADHI 2020",
+        "url": "https://adhi.co.id/wp-content/uploads/2024/05/Laporan-Keuangan-ADHI-Karya-2020.pdf",
+        "filename": "ADHI_AR_2020.pdf"
+      },
+      {
+        "year": 2019,
+        "report_type": "Annual Report",
+        "title": "Laporan Tahunan ADHI 2019",
+        "url": "https://adhi.co.id/wp-content/uploads/2024/05/Laporan-Keuangan-ADHI-Karya-2019.pdf",
+        "filename": "ADHI_AR_2019.pdf"
+      },
+      {
+        "year": 2018,
+        "report_type": "Annual Report",
+        "title": "Laporan Tahunan ADHI 2018",
+        "url": "https://adhi.co.id/wp-content/uploads/2024/05/Laporan-Keuangan-ADHI-Karya-2018.pdf",
+        "filename": "ADHI_AR_2018.pdf"
+      },
+      {
+        "year": 2017,
+        "report_type": "Annual Report",
+        "title": "Laporan Tahunan ADHI 2017",
+        "url": "https://adhi.co.id/wp-content/uploads/2024/05/Laporan-Keuangan-ADHI-Karya-2017.pdf",
+        "filename": "ADHI_AR_2017.pdf"
+      },
+      {
+        "year": 2016,
+        "report_type": "Annual Report",
+        "title": "Laporan Tahunan ADHI 2016",
+        "url": "https://adhi.co.id/wp-content/uploads/2024/05/Laporan-Keuangan-ADHI-Karya-2016.pdf",
+        "filename": "ADHI_AR_2016.pdf"
+      },
+      {
+        "year": 2015,
+        "report_type": "Annual Report",
+        "title": "Laporan Tahunan ADHI 2015",
+        "url": "https://adhi.co.id/wp-content/uploads/2024/05/Laporan-Keuangan-ADHI-Karya-2015.pdf",
+        "filename": "ADHI_AR_2015.pdf"
+      }
+    ],
+    "years_found": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "years_missing": [],
+    "curl_commands": [
+      "curl -sL -o 'results/pdfs/ADHI_AR_2025.pdf' 'https://adhi.co.id/wp-content/uploads/2026/06/ADHI-Annual-Report-2025.pdf'",
+      "curl -sL -o 'results/pdfs/ADHI_AR_2024.pdf' 'https://adhi.co.id/wp-content/uploads/2025/04/BOOK-AR-ADHI-KARYA-24-1.pdf'",
+      "curl -sL -o 'results/pdfs/ADHI_AR_2023.pdf' 'https://adhi.co.id/wp-content/uploads/2025/02/AR-ADHI-2023.pdf'",
+      "curl -sL -o 'results/pdfs/ADHI_AR_2022.pdf' 'https://adhi.co.id/wp-content/uploads/2024/05/Laporan-Keuangan-ADHI-Karya-2022.pdf'",
+      "curl -sL -o 'results/pdfs/ADHI_AR_2021.pdf' 'https://adhi.co.id/wp-content/uploads/2024/05/Laporan-Keuangan-ADHI-Karya-2021.pdf'",
+      "curl -sL -o 'results/pdfs/ADHI_AR_2020.pdf' 'https://adhi.co.id/wp-content/uploads/2024/05/Laporan-Keuangan-ADHI-Karya-2020.pdf'",
+      "curl -sL -o 'results/pdfs/ADHI_AR_2019.pdf' 'https://adhi.co.id/wp-content/uploads/2024/05/Laporan-Keuangan-ADHI-Karya-2019.pdf'",
+      "curl -sL -o 'results/pdfs/ADHI_AR_2018.pdf' 'https://adhi.co.id/wp-content/uploads/2024/05/Laporan-Keuangan-ADHI-Karya-2018.pdf'",
+      "curl -sL -o 'results/pdfs/ADHI_AR_2017.pdf' 'https://adhi.co.id/wp-content/uploads/2024/05/Laporan-Keuangan-ADHI-Karya-2017.pdf'",
+      "curl -sL -o 'results/pdfs/ADHI_AR_2016.pdf' 'https://adhi.co.id/wp-content/uploads/2024/05/Laporan-Keuangan-ADHI-Karya-2016.pdf'",
+      "curl -sL -o 'results/pdfs/ADHI_AR_2015.pdf' 'https://adhi.co.id/wp-content/uploads/2024/05/Laporan-Keuangan-ADHI-Karya-2015.pdf'"
+    ]
   }
 ]

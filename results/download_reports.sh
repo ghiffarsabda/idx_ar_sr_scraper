@@ -163,3 +163,16 @@ curl -sL -o 'results/pdfs/ADES_AR_2022.pdf' 'http://akashainternational.com/wp-c
 curl -sL -o 'results/pdfs/ADES_AR_2023.pdf' 'https://akashainternational.com/wp-content/uploads/2024/04/ANNUAL-REPORT-ADES-2023.pdf'
 curl -sL -o 'results/pdfs/ADES_AR_2024.pdf' 'https://akashainternational.com/wp-content/uploads/2025/04/ANNUAL-REPORT-ADES-2024.pdf'
 curl -sL -o 'results/pdfs/ADES_AR_2025.pdf' 'https://akashainternational.com/wp-content/uploads/2026/06/Annual-Report-2025.pdf'
+
+# ADHI Annual Reports 2015-2025
+curl -sL -o 'results/pdfs/ADHI_AR_2025.pdf' 'https://adhi.co.id/wp-content/uploads/2026/06/ADHI-Annual-Report-2025.pdf'
+curl -sL -o 'results/pdfs/ADHI_AR_2024.pdf' 'https://adhi.co.id/wp-content/uploads/2025/04/BOOK-AR-ADHI-KARYA-24-1.pdf'
+curl -sL -o 'results/pdfs/ADHI_AR_2023.pdf' 'https://adhi.co.id/wp-content/uploads/2025/02/AR-ADHI-2023.pdf'
+curl -sL -o 'results/pdfs/ADHI_AR_2022.pdf' 'https://adhi.co.id/wp-content/uploads/2024/05/Laporan-Keuangan-ADHI-Karya-2022.pdf'
+curl -sL -o 'results/pdfs/ADHI_AR_2021.pdf' 'https://adhi.co.id/wp-content/uploads/2024/05/Laporan-Keuangan-ADHI-Karya-2021.pdf'
+curl -sL -o 'results/pdfs/ADHI_AR_2020.pdf' 'https://adhi.co.id/wp-content/uploads/2024/05/Laporan-Keuangan-ADHI-Karya-2020.pdf'
+curl -sL -o 'results/pdfs/ADHI_AR_2019.pdf' 'https://adhi.co.id/wp-content/uploads/2024/05/Laporan-Keuangan-ADHI-Karya-2019.pdf'
+curl -sL -o 'results/pdfs/ADHI_AR_2018.pdf' 'https://adhi.co.id/wp-content/uploads/2024/05/Laporan-Keuangan-ADHI-Karya-2018.pdf'
+curl -sL -o 'results/pdfs/ADHI_AR_2017.pdf' 'https://adhi.co.id/wp-content/uploads/2024/05/Laporan-Keuangan-ADHI-Karya-2017.pdf'
+curl -sL -o 'results/pdfs/ADHI_AR_2016.pdf' 'https://adhi.co.id/wp-content/uploads/2024/05/Laporan-Keuangan-ADHI-Karya-2016.pdf'
+curl -sL -o 'results/pdfs/ADHI_AR_2015.pdf' 'https://adhi.co.id/wp-content/uploads/2024/05/Laporan-Keuangan-ADHI-Karya-2015.pdf'
