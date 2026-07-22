@@ -1,9 +1,8 @@
 {
-  "ticker": "AADI",
-  "status": "complete",
-  "urls_extracted": 2,
-  "years_requested": [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
-  "years_found": [2024, 2025],
-  "years_not_available": [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023],
-  "source": "Hubungan Investor > Laporan Tahunan"
+  "ticker": "ABDA",
+  "company_name": "PT Asuransi Bina Dana Arta Tbk",
+  "status": "completed",
+  "reports_found_count": 11,
+  "years_covered": [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
+  "source_url": "https://www.myoona.id/tentang-kami/tata-kelola-perusahaan/"
 }

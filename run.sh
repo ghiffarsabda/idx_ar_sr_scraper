@@ -74,14 +74,18 @@ for company in companies:
     if os.path.exists(TEMP_DOWNLOAD_SCRIPT):
         os.remove(TEMP_DOWNLOAD_SCRIPT)
 
-    # Prompt points AI to output URLs to urls_temp.sh
+    # Standardized prompt formatted dynamically
     prompt = (
         f"/agent-browser Task: find annual report PDF download URLs for {company_name} ({ticker}). "
         f"WEBSITE: {website} YEARS: 2015 to 2025 TICKER: {ticker} "
         f"DOWNLOAD_SCRIPT: {TEMP_DOWNLOAD_SCRIPT} PROGRESS_FILE: {PROGRESS_PATH} "
-        f"Using the browser tool: 1. Navigate to the website 2. Find annual reports "
-        f"3. Append curl commands to download script ({TEMP_DOWNLOAD_SCRIPT}) 4. Update progress "
-        f"RESULT: write to {LAST_RESULT} "
+        f"Using the browser tool: 1. Navigate to website 2. Find annual reports "
+        f"3. Append curl commands (curl -sL -o 'results/pdfs/{ticker}_AR_YYYY.pdf' 'URL') to {TEMP_DOWNLOAD_SCRIPT} "
+        f"4. Update {PROGRESS_PATH} "
+        f"RESULT: Write standardized JSON to {LAST_RESULT} with schema: "
+        f'{{"ticker": "{ticker}", "company_name": "{company_name}", "website": "{website}", "status": "completed", '
+        f'"reports_found": [{{"year": 2024, "report_type": "Annual Report", "title": "...", "url": "...", "filename": "{ticker}_AR_2024.pdf"}}], '
+        f'"years_found": [2015, 2016], "years_missing": [], "curl_commands": ["curl -sL -o \'results/pdfs/{ticker}_AR_2024.pdf\' \'URL\'"]}} '
         f"When you are done, run {DONE_SCRIPT}"
     )
 
