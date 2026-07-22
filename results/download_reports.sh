@@ -147,3 +147,19 @@ curl -sL -o 'results/pdfs/ADCP_AR_2025.pdf' 'https://www.idx.co.id/StaticData/Ne
 curl -sL -o 'results/pdfs/ADCP_AR_2024.pdf' 'https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202504/ff7504306f_4582b272d4.pdf'
 curl -sL -o 'results/pdfs/ADCP_AR_2021.pdf' 'https://adcp.co.id/storage/new-yearly-reports/December2023/yearly%20report.pdf'
 curl -sL -o 'results/pdfs/ADCP_AR_2020.pdf' 'https://adcp.co.id/storage/information-disclosures/September2021/ANNUAL%20REPORT%20TAHUN%202020.pdf'
+
+#!/bin/bash
+# Annual report download URLs for ADES (Akasha Wira International Tbk)
+# Generated from https://www.akashainternational.com
+
+curl -sL -o 'results/pdfs/ADES_AR_2015.pdf' 'http://akashainternational.com/wp-content/uploads/2019/01/ANNUAL-REPORT-2015-AWI.pdf'
+curl -sL -o 'results/pdfs/ADES_AR_2016.pdf' 'http://akashainternational.com/wp-content/uploads/2019/01/ANNUAL-REPORT-2016-AWI.pdf.pdf'
+curl -sL -o 'results/pdfs/ADES_AR_2017.pdf' 'http://akashainternational.com/wp-content/uploads/2019/01/Annual-Report-2017-AWI.pdf'
+curl -sL -o 'results/pdfs/ADES_AR_2018.pdf' 'http://akashainternational.com/wp-content/uploads/2019/05/ADES-AR-2108-eReporting-300419.pdf'
+curl -sL -o 'results/pdfs/ADES_AR_2019.pdf' 'http://akashainternational.com/wp-content/uploads/2020/06/Laporan-Tahunan-Akasha-31-Desember-2019-Final.pdf'
+curl -sL -o 'results/pdfs/ADES_AR_2020.pdf' 'http://akashainternational.com/wp-content/uploads/2021/06/AR-2020-Akasha-Wira-International-Tbk-Rev-828-06-2021e-reporting.pdf'
+curl -sL -o 'results/pdfs/ADES_AR_2021.pdf' 'http://akashainternational.com/wp-content/uploads/2022/05/ADES-AR-2021-eReporting_300522_3.pdf'
+curl -sL -o 'results/pdfs/ADES_AR_2022.pdf' 'http://akashainternational.com/wp-content/uploads/2023/05/ANNUAL-REPORT-ADES-2022.pdf'
+curl -sL -o 'results/pdfs/ADES_AR_2023.pdf' 'https://akashainternational.com/wp-content/uploads/2024/04/ANNUAL-REPORT-ADES-2023.pdf'
+curl -sL -o 'results/pdfs/ADES_AR_2024.pdf' 'https://akashainternational.com/wp-content/uploads/2025/04/ANNUAL-REPORT-ADES-2024.pdf'
+curl -sL -o 'results/pdfs/ADES_AR_2025.pdf' 'https://akashainternational.com/wp-content/uploads/2026/06/Annual-Report-2025.pdf'
