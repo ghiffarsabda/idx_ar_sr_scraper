@@ -176,3 +176,16 @@ curl -sL -o 'results/pdfs/ADHI_AR_2018.pdf' 'https://adhi.co.id/wp-content/uploa
 curl -sL -o 'results/pdfs/ADHI_AR_2017.pdf' 'https://adhi.co.id/wp-content/uploads/2024/05/Laporan-Keuangan-ADHI-Karya-2017.pdf'
 curl -sL -o 'results/pdfs/ADHI_AR_2016.pdf' 'https://adhi.co.id/wp-content/uploads/2024/05/Laporan-Keuangan-ADHI-Karya-2016.pdf'
 curl -sL -o 'results/pdfs/ADHI_AR_2015.pdf' 'https://adhi.co.id/wp-content/uploads/2024/05/Laporan-Keuangan-ADHI-Karya-2015.pdf'
+
+#!/bin/bash
+curl -sL -o 'results/pdfs/ADMF_AR_2025.pdf' 'https://www.adira.co.id/api/files/Laporan%20Tahunan%202025%20-%20Final%20090426.pdf'
+curl -sL -o 'results/pdfs/ADMF_AR_2024.pdf' 'https://www.adira.co.id/api/files/Laporan_Tahunan%202024_Adira.pdf'
+curl -sL -o 'results/pdfs/ADMF_AR_2023.pdf' 'https://www.adira.co.id/api/files/AdiraFinance_AR_2023_Ina_130524.pdf'
+curl -sL -o 'results/pdfs/ADMF_AR_2022.pdf' 'https://www.adira.co.id/api/files/Laporan_Tahunan_2022_-_ADMF.pdf'
+curl -sL -o 'results/pdfs/ADMF_AR_2021.pdf' 'https://www.adira.co.id/api/files/AR2021_ADMF_INA_FInal_26032022.pdf'
+curl -sL -o 'results/pdfs/ADMF_AR_2020.pdf' 'https://www.adira.co.id/api/files/AR2020_AMDF_INA.pdf'
+curl -sL -o 'results/pdfs/ADMF_AR_2019.pdf' 'https://www.adira.co.id/api/files/AR2019_AMDF_INA.pdf'
+curl -sL -o 'results/pdfs/ADMF_AR_2018.pdf' 'https://www.adira.co.id/api/files/AR2018_AMDF_INA.pdf'
+curl -sL -o 'results/pdfs/ADMF_AR_2017.pdf' 'https://www.adira.co.id/api/files/AR2017_AMDF_INA.pdf'
+curl -sL -o 'results/pdfs/ADMF_AR_2016.pdf' 'https://www.adira.co.id/api/files/AR2016_AMDF_INA.pdf'
+curl -sL -o 'results/pdfs/ADMF_AR_2015.pdf' 'https://www.adira.co.id/api/files/AR2015_AMDF_INA.pdf'

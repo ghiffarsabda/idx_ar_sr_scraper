@@ -1425,5 +1425,117 @@
       "curl -sL -o 'results/pdfs/ADHI_AR_2016.pdf' 'https://adhi.co.id/wp-content/uploads/2024/05/Laporan-Keuangan-ADHI-Karya-2016.pdf'",
       "curl -sL -o 'results/pdfs/ADHI_AR_2015.pdf' 'https://adhi.co.id/wp-content/uploads/2024/05/Laporan-Keuangan-ADHI-Karya-2015.pdf'"
     ]
+  },
+  {
+    "ticker": "ADMF",
+    "company_name": "Adira Dinamika Multi Finance Tbk",
+    "website": "https://www.adira.co.id",
+    "status": "completed",
+    "reports_found": [
+      {
+        "year": 2025,
+        "report_type": "Annual Report",
+        "title": "Laporan Tahunan 2025 - ADMF",
+        "url": "https://www.adira.co.id/api/files/Laporan%20Tahunan%202025%20-%20Final%20090426.pdf",
+        "filename": "ADMF_AR_2025.pdf"
+      },
+      {
+        "year": 2024,
+        "report_type": "Annual Report",
+        "title": "Laporan Tahunan 2024 - ADMF",
+        "url": "https://www.adira.co.id/api/files/Laporan_Tahunan%202024_Adira.pdf",
+        "filename": "ADMF_AR_2024.pdf"
+      },
+      {
+        "year": 2023,
+        "report_type": "Annual Report",
+        "title": "Laporan Tahunan 2023 - ADMF",
+        "url": "https://www.adira.co.id/api/files/AdiraFinance_AR_2023_Ina_130524.pdf",
+        "filename": "ADMF_AR_2023.pdf"
+      },
+      {
+        "year": 2022,
+        "report_type": "Annual Report",
+        "title": "Laporan Tahunan 2022 - ADMF",
+        "url": "https://www.adira.co.id/api/files/Laporan_Tahunan_2022_-_ADMF.pdf",
+        "filename": "ADMF_AR_2022.pdf"
+      },
+      {
+        "year": 2021,
+        "report_type": "Annual Report",
+        "title": "Laporan Tahunan 2021 - ADMF",
+        "url": "https://www.adira.co.id/api/files/AR2021_ADMF_INA_FInal_26032022.pdf",
+        "filename": "ADMF_AR_2021.pdf"
+      },
+      {
+        "year": 2020,
+        "report_type": "Annual Report",
+        "title": "Laporan Tahunan 2020 - ADMF",
+        "url": "https://www.adira.co.id/api/files/AR2020_AMDF_INA.pdf",
+        "filename": "ADMF_AR_2020.pdf"
+      },
+      {
+        "year": 2019,
+        "report_type": "Annual Report",
+        "title": "Laporan Tahunan 2019 ADMF",
+        "url": "https://www.adira.co.id/api/files/AR2019_AMDF_INA.pdf",
+        "filename": "ADMF_AR_2019.pdf"
+      },
+      {
+        "year": 2018,
+        "report_type": "Annual Report",
+        "title": "Laporan Tahunan 2018",
+        "url": "https://www.adira.co.id/api/files/AR2018_AMDF_INA.pdf",
+        "filename": "ADMF_AR_2018.pdf"
+      },
+      {
+        "year": 2017,
+        "report_type": "Annual Report",
+        "title": "Laporan Tahunan 2017 ADMF",
+        "url": "https://www.adira.co.id/api/files/AR2017_AMDF_INA.pdf",
+        "filename": "ADMF_AR_2017.pdf"
+      },
+      {
+        "year": 2016,
+        "report_type": "Annual Report",
+        "title": "Laporan Tahunan 2016 ADMF",
+        "url": "https://www.adira.co.id/api/files/AR2016_AMDF_INA.pdf",
+        "filename": "ADMF_AR_2016.pdf"
+      },
+      {
+        "year": 2015,
+        "report_type": "Annual Report",
+        "title": "Laporan Tahunan 2015 ADMF",
+        "url": "https://www.adira.co.id/api/files/AR2015_AMDF_INA.pdf",
+        "filename": "ADMF_AR_2015.pdf"
+      }
+    ],
+    "years_found": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "years_missing": [],
+    "curl_commands": [
+      "curl -sL -o 'results/pdfs/ADMF_AR_2025.pdf' 'https://www.adira.co.id/api/files/Laporan%20Tahunan%202025%20-%20Final%20090426.pdf'",
+      "curl -sL -o 'results/pdfs/ADMF_AR_2024.pdf' 'https://www.adira.co.id/api/files/Laporan_Tahunan%202024_Adira.pdf'",
+      "curl -sL -o 'results/pdfs/ADMF_AR_2023.pdf' 'https://www.adira.co.id/api/files/AdiraFinance_AR_2023_Ina_130524.pdf'",
+      "curl -sL -o 'results/pdfs/ADMF_AR_2022.pdf' 'https://www.adira.co.id/api/files/Laporan_Tahunan_2022_-_ADMF.pdf'",
+      "curl -sL -o 'results/pdfs/ADMF_AR_2021.pdf' 'https://www.adira.co.id/api/files/AR2021_ADMF_INA_FInal_26032022.pdf'",
+      "curl -sL -o 'results/pdfs/ADMF_AR_2020.pdf' 'https://www.adira.co.id/api/files/AR2020_AMDF_INA.pdf'",
+      "curl -sL -o 'results/pdfs/ADMF_AR_2019.pdf' 'https://www.adira.co.id/api/files/AR2019_AMDF_INA.pdf'",
+      "curl -sL -o 'results/pdfs/ADMF_AR_2018.pdf' 'https://www.adira.co.id/api/files/AR2018_AMDF_INA.pdf'",
+      "curl -sL -o 'results/pdfs/ADMF_AR_2017.pdf' 'https://www.adira.co.id/api/files/AR2017_AMDF_INA.pdf'",
+      "curl -sL -o 'results/pdfs/ADMF_AR_2016.pdf' 'https://www.adira.co.id/api/files/AR2016_AMDF_INA.pdf'",
+      "curl -sL -o 'results/pdfs/ADMF_AR_2015.pdf' 'https://www.adira.co.id/api/files/AR2015_AMDF_INA.pdf'"
+    ]
   }
 ]
