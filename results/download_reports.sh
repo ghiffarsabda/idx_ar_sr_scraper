@@ -16,3 +16,13 @@ curl -sL -o 'results/pdfs/ABDA_AR_2025.pdf' 'https://myoona.id/content/dam/oona/
 
 curl -sL -o 'results/pdfs/AADI_AR_2025.pdf' 'https://adaroindonesia.com/app/webroot/upload/files/Laporan%20Tahunan/AADI%20Annual%20Report%202025.pdf'
 curl -sL -o 'results/pdfs/AADI_AR_2024.pdf' 'https://adaroindonesia.com/app/webroot/upload/files/Laporan%20Tahunan/AADI%20Annual%20Report%202024.pdf'
+
+#!/bin/bash
+# Annual Report URLs for AALI (Astra Agro Lestari Tbk)
+
+# Download Annual Reports
+curl -sL -o 'results/pdfs/AALI_AR_2025.pdf' 'https://www.astra-agro.co.id/wp-content/uploads/2026/03/AR-2025-AALI-web.pdf'
+curl -sL -o 'results/pdfs/AALI_AR_2024.pdf' 'https://www.astra-agro.co.id/wp-content/uploads/2025/04/Annual-Report-2024-AAL-web.pdf'
+curl -sL -o 'results/pdfs/AALI_AR_2023.pdf' 'https://www.astra-agro.co.id/wp-content/uploads/2024/04/Annual-Report-PT-ASTRA-AGRO-LESTARI-Tbk-2023-web.pdf'
+curl -sL -o 'results/pdfs/AALI_AR_2022.pdf' 'https://www.astra-agro.co.id/wp-content/uploads/2023/03/AR-2022-PT-Astra-Agro-Lestari-Tbk.pdf'
+curl -sL -o 'results/pdfs/AALI_AR_2021.pdf' 'https://www.astra-agro.co.id/wp-content/uploads/2022/03/Laporan-Tahunan-AALI-tahun-2021.pdf'

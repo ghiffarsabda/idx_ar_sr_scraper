@@ -194,5 +194,70 @@
       "curl -sL -o 'results/pdfs/AADI_AR_2024.pdf' 'https://adaroindonesia.com/app/webroot/upload/files/Laporan%20Tahunan/AADI%20Annual%20Report%202024.pdf'"
     ],
     "notes": "PT Adaro Andalan Indonesia Tbk (AADI) was established as a separate listed entity in 2024 following the spin-off from Adaro Energy Indonesia (ADRO). Only annual reports for 2024 and 2025 are available on the company's website; no historical AADI-specific annual reports exist for 2015-2023."
+  },
+  {
+    "ticker": "AALI",
+    "company_name": "Astra Agro Lestari Tbk",
+    "website": "http://www.astra-agro.co.id",
+    "status": "completed",
+    "reports_found": [
+      {
+        "year": 2025,
+        "report_type": "Annual Report",
+        "title": "Annual Report 2025",
+        "url": "https://www.astra-agro.co.id/wp-content/uploads/2026/03/AR-2025-AALI-web.pdf",
+        "filename": "AALI_AR_2025.pdf"
+      },
+      {
+        "year": 2024,
+        "report_type": "Annual Report",
+        "title": "Annual Report 2024",
+        "url": "https://www.astra-agro.co.id/wp-content/uploads/2025/04/Annual-Report-2024-AAL-web.pdf",
+        "filename": "AALI_AR_2024.pdf"
+      },
+      {
+        "year": 2023,
+        "report_type": "Annual Report",
+        "title": "Annual Report 2023",
+        "url": "https://www.astra-agro.co.id/wp-content/uploads/2024/04/Annual-Report-PT-ASTRA-AGRO-LESTARI-Tbk-2023-web.pdf",
+        "filename": "AALI_AR_2023.pdf"
+      },
+      {
+        "year": 2022,
+        "report_type": "Annual Report",
+        "title": "Annual Report 2022",
+        "url": "https://www.astra-agro.co.id/wp-content/uploads/2023/03/AR-2022-PT-Astra-Agro-Lestari-Tbk.pdf",
+        "filename": "AALI_AR_2022.pdf"
+      },
+      {
+        "year": 2021,
+        "report_type": "Annual Report",
+        "title": "Annual Report 2021",
+        "url": "https://www.astra-agro.co.id/wp-content/uploads/2022/03/Laporan-Tahunan-AALI-tahun-2021.pdf",
+        "filename": "AALI_AR_2021.pdf"
+      }
+    ],
+    "years_found": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "years_missing": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020
+    ],
+    "curl_commands": [
+      "curl -sL -o 'results/pdfs/AALI_AR_2025.pdf' 'https://www.astra-agro.co.id/wp-content/uploads/2026/03/AR-2025-AALI-web.pdf'",
+      "curl -sL -o 'results/pdfs/AALI_AR_2024.pdf' 'https://www.astra-agro.co.id/wp-content/uploads/2025/04/Annual-Report-2024-AAL-web.pdf'",
+      "curl -sL -o 'results/pdfs/AALI_AR_2023.pdf' 'https://www.astra-agro.co.id/wp-content/uploads/2024/04/Annual-Report-PT-ASTRA-AGRO-LESTARI-Tbk-2023-web.pdf'",
+      "curl -sL -o 'results/pdfs/AALI_AR_2022.pdf' 'https://www.astra-agro.co.id/wp-content/uploads/2023/03/AR-2022-PT-Astra-Agro-Lestari-Tbk.pdf'",
+      "curl -sL -o 'results/pdfs/AALI_AR_2021.pdf' 'https://www.astra-agro.co.id/wp-content/uploads/2022/03/Laporan-Tahunan-AALI-tahun-2021.pdf'"
+    ]
   }
 ]

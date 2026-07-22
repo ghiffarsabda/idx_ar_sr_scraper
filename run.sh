@@ -28,6 +28,8 @@ if "--fresh" in sys.argv or "-f" in sys.argv:
             os.remove(PROGRESS_PATH)
         if os.path.exists(LAST_RESULT):
             os.remove(LAST_RESULT)
+        if os.path.exists(RESULT_LOG):
+            os.remove(RESULT_LOG)
 
 os.makedirs(RESULTS_DIR, exist_ok=True)
 
@@ -46,23 +48,59 @@ if not companies:
 
 last_ticker_in_csv = companies[-1]["ticker"].strip()
 
+def get_completed_tickers():
+    completed = set()
+    
+    # 1. Check result-log.json
+    if os.path.exists(RESULT_LOG):
+        try:
+            with open(RESULT_LOG, "r", encoding="utf-8") as f:
+                log_data = json.load(f)
+                if isinstance(log_data, list):
+                    for entry in log_data:
+                        if isinstance(entry, dict) and entry.get("ticker"):
+                            st = entry.get("status", "").lower()
+                            if st in ("completed", "done", "success") or entry.get("completed") is True:
+                                completed.add(entry["ticker"].strip())
+        except Exception:
+            pass
+
+    # 2. Check progress.json
+    if os.path.exists(PROGRESS_PATH):
+        try:
+            with open(PROGRESS_PATH, "r", encoding="utf-8") as f:
+                prog_data = json.load(f)
+                if isinstance(prog_data, dict):
+                    if prog_data.get("ticker"):
+                        st = str(prog_data.get("status", "")).lower()
+                        if st in ("completed", "done", "success") or prog_data.get("completed") is True:
+                            completed.add(str(prog_data["ticker"]).strip())
+                    for k, v in prog_data.items():
+                        if isinstance(v, dict):
+                            st = str(v.get("status", "")).lower()
+                            if st in ("completed", "done", "success") or v.get("completed") is True:
+                                completed.add(k.strip())
+                elif isinstance(prog_data, list):
+                    for entry in prog_data:
+                        if isinstance(entry, dict) and entry.get("ticker"):
+                            st = str(entry.get("status", "")).lower()
+                            if st in ("completed", "done", "success") or entry.get("completed") is True:
+                                completed.add(str(entry["ticker"]).strip())
+        except Exception:
+            pass
+            
+    return completed
+
 for company in companies:
     ticker = company["ticker"].strip()
     company_name = company["company_name"].strip()
     website = company["website"].strip()
 
-    # Re-read progress.json dynamically before processing ticker
-    progress = {}
-    if os.path.exists(PROGRESS_PATH):
-        try:
-            with open(PROGRESS_PATH, "r", encoding="utf-8") as f:
-                progress = json.load(f)
-        except Exception:
-            progress = {}
+    # Get set of already completed tickers from result-log.json and progress.json
+    completed_tickers = get_completed_tickers()
 
-    ticker_data = progress.get(ticker, {})
-    if ticker_data.get("completed") is True or ticker_data.get("status") == "completed":
-        print(f"[{ticker}] Already completed. Skipping.")
+    if ticker in completed_tickers:
+        print(f"[{ticker}] Already completed in result-log.json / progress.json. Skipping.")
         if ticker == last_ticker_in_csv:
             print(f"[{ticker}] Last ticker reached. Stopping loop.")
             break
@@ -103,7 +141,7 @@ for company in companies:
             print(f"[{ticker}] Appended urls_temp.sh to download_reports.sh.")
         os.remove(TEMP_DOWNLOAD_SCRIPT)
 
-    # 2. Append last-result.json to result-log.json
+    # 2. Append last-result.json to result-log.json (avoiding duplicate entries for same ticker)
     if os.path.exists(LAST_RESULT):
         try:
             with open(LAST_RESULT, "r", encoding="utf-8") as rf:
@@ -121,7 +159,11 @@ for company in companies:
                             log_list = [log_list]
                 except Exception:
                     log_list = []
+            
+            # Remove any existing entry for this ticker before appending updated one
+            log_list = [e for e in log_list if isinstance(e, dict) and e.get("ticker") != ticker]
             log_list.append(last_res_data)
+            
             with open(RESULT_LOG, "w", encoding="utf-8") as lf:
                 json.dump(log_list, lf, indent=2)
             print(f"[{ticker}] Appended last-result.json to result-log.json.")

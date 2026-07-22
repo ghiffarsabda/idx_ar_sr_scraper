@@ -1,8 +1,8 @@
 {
-  "ticker": "AADI",
-  "company_name": "PT Adaro Andalan Indonesia Tbk",
-  "status": "completed",
-  "reports_found_count": 2,
-  "years_covered": [2024, 2025],
-  "source_url": "https://www.adaroindonesia.com/pages/view/laporan-tahunan.html"
+  "AALI": {
+    "status": "completed",
+    "years_found": [2021, 2022, 2023, 2024, 2025],
+    "years_missing": [2015, 2016, 2017, 2018, 2019, 2020],
+    "last_updated": "2026-07-22T17:25:00.000Z"
+  }
 }
