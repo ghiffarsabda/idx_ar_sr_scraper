@@ -11,8 +11,8 @@ COMPANY_LIST_PATH = os.path.join(BASE_DIR, "companylist.csv")
 PROGRESS_PATH = os.path.join(BASE_DIR, "progress.json")
 RESULTS_DIR = os.path.join(BASE_DIR, "results")
 DOWNLOAD_SCRIPT = os.path.join(RESULTS_DIR, "download_reports.sh")
+TEMP_DOWNLOAD_SCRIPT = os.path.join(RESULTS_DIR, "urls_temp.sh")
 LAST_RESULT = os.path.join(RESULTS_DIR, "last-result.json")
-URLS_TEMP = os.path.join(RESULTS_DIR, "urls_temp.sh")
 RESULT_LOG = os.path.join(RESULTS_DIR, "result-log.json")
 DONE_SCRIPT = os.path.join(BASE_DIR, "done.sh")
 CLEAR_SCRIPT = os.path.join(BASE_DIR, "clear.sh")
@@ -70,17 +70,18 @@ for company in companies:
 
     print(f"[{ticker}] Processing {company_name} ({website})...")
 
-    # Single-line prompt formatted dynamically with instructions to run done.sh upon completion
+    # Clear urls_temp.sh prior to running current ticker
+    if os.path.exists(TEMP_DOWNLOAD_SCRIPT):
+        os.remove(TEMP_DOWNLOAD_SCRIPT)
+
+    # Prompt points AI to output URLs to urls_temp.sh
     prompt = (
         f"/agent-browser Task: find annual report PDF download URLs for {company_name} ({ticker}). "
         f"WEBSITE: {website} YEARS: 2015 to 2025 TICKER: {ticker} "
-        f"URLS_TEMP: {URLS_TEMP} PROGRESS_FILE: {PROGRESS_PATH} "
+        f"DOWNLOAD_SCRIPT: {TEMP_DOWNLOAD_SCRIPT} PROGRESS_FILE: {PROGRESS_PATH} "
         f"Using the browser tool: 1. Navigate to the website 2. Find annual reports "
-        f"3. Write ONLY the new curl commands for {ticker} to {URLS_TEMP} "
-        f"(a fresh file you create with your curl lines, no need to read existing files). "
-        f"4. Update progress file. "
-        f"5. Write your structured result to {LAST_RESULT}. "
-        f"Do NOT touch download_reports.sh or any other aggregate file. "
+        f"3. Append curl commands to download script ({TEMP_DOWNLOAD_SCRIPT}) 4. Update progress "
+        f"RESULT: write to {LAST_RESULT} "
         f"When you are done, run {DONE_SCRIPT}"
     )
 
@@ -88,38 +89,46 @@ for company in companies:
     cmd_args = ["gnome-terminal", "--wait", "--", "cmd", "--yolo", prompt]
     subprocess.run(cmd_args)
 
-    # After agent finishes, append urls_temp.sh -> download_reports.sh
-    # and merge last-result.json -> result-log.json, then clear temp files.
-    if os.path.exists(URLS_TEMP):
-        with open(URLS_TEMP, "r", encoding="utf-8") as in_f:
-            new_urls = in_f.read()
-        with open(DOWNLOAD_SCRIPT, "a", encoding="utf-8") as out_f:
-            out_f.write(f"\n# {ticker}\n{new_urls}")
-        os.remove(URLS_TEMP)
-        print(f"[{ticker}] Appended URLs to {DOWNLOAD_SCRIPT}")
-    else:
-        print(f"[{ticker}] No urls_temp.sh found, skipping append.")
+    # 1. Merge urls_temp.sh into main download_reports.sh
+    if os.path.exists(TEMP_DOWNLOAD_SCRIPT):
+        with open(TEMP_DOWNLOAD_SCRIPT, "r", encoding="utf-8") as tf:
+            temp_urls = tf.read().strip()
+        if temp_urls:
+            with open(DOWNLOAD_SCRIPT, "a", encoding="utf-8") as df:
+                df.write("\n" + temp_urls + "\n")
+            print(f"[{ticker}] Appended urls_temp.sh to download_reports.sh.")
+        os.remove(TEMP_DOWNLOAD_SCRIPT)
 
+    # 2. Append last-result.json to result-log.json
     if os.path.exists(LAST_RESULT):
         try:
-            with open(LAST_RESULT, "r", encoding="utf-8") as f:
-                entry = json.load(f)
-            log = []
+            with open(LAST_RESULT, "r", encoding="utf-8") as rf:
+                last_res_data = json.load(rf)
+        except Exception:
+            last_res_data = None
+
+        if last_res_data:
+            log_list = []
             if os.path.exists(RESULT_LOG):
                 try:
-                    with open(RESULT_LOG, "r", encoding="utf-8") as f:
-                        existing = json.load(f)
-                        log = existing if isinstance(existing, list) else [existing]
+                    with open(RESULT_LOG, "r", encoding="utf-8") as lf:
+                        log_list = json.load(lf)
+                        if not isinstance(log_list, list):
+                            log_list = [log_list]
                 except Exception:
-                    log = []
-            log.append(entry)
-            with open(RESULT_LOG, "w", encoding="utf-8") as f:
-                json.dump(log, f, indent=2, ensure_ascii=False)
-            print(f"[{ticker}] Merged result into {RESULT_LOG}")
-        except Exception as e:
-            print(f"[{ticker}] Failed to merge last-result.json: {e}")
-    else:
-        print(f"[{ticker}] No last-result.json found, skipping merge.")
+                    log_list = []
+            log_list.append(last_res_data)
+            with open(RESULT_LOG, "w", encoding="utf-8") as lf:
+                json.dump(log_list, lf, indent=2)
+            print(f"[{ticker}] Appended last-result.json to result-log.json.")
+
+    # 3. Git add, commit, and push for this ticker
+    print(f"[{ticker}] Running git add, commit, and push...")
+    subprocess.run(["git", "add", "."], cwd=BASE_DIR, check=False)
+    subprocess.run(["git", "commit", "-m", f"added {ticker}"], cwd=BASE_DIR, check=False)
+    print(f"[{ticker}] Pushing to remote repository...")
+    subprocess.run(["git", "push"], cwd=BASE_DIR, check=False)
+    print(f"[{ticker}] Git push completed.")
 
     # Check if last ticker was reached
     if ticker == last_ticker_in_csv:

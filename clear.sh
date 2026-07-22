@@ -5,13 +5,11 @@ BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 echo "Clearing previous run outputs..."
 
-# Remove progress.json
+# Remove progress.json, result-log.json, last-result.json, urls_temp.sh
 rm -f "$BASE_DIR/progress.json"
-
-# Remove temp & log files
 rm -f "$BASE_DIR/results/last-result.json"
-rm -f "$BASE_DIR/results/urls_temp.sh"
 rm -f "$BASE_DIR/results/result-log.json"
+rm -f "$BASE_DIR/results/urls_temp.sh"
 rm -f "$BASE_DIR"/.prompt_*.txt
 
 # Reset download_reports.sh with header
