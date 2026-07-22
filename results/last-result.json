@@ -1,23 +1,21 @@
 {
-  "ticker": "AADI",
-  "company": "PT Adaro Andalan Indonesia Tbk",
-  "website": "https://www.adaroindonesia.com/",
-  "source": "https://adaroindonesia.com/pages/view/laporan-tahunan.html",
-  "requested_years": [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
-  "reports": [
-    {
-      "year": 2024,
-      "url": "https://adaroindonesia.com/app/webroot/upload/files/Laporan%20Tahunan/AADI%20Annual%20Report%202024.pdf",
-      "status": "verified"
-    },
-    {
-      "year": 2025,
-      "url": "https://adaroindonesia.com/app/webroot/upload/files/Laporan%20Tahunan/AADI%20Annual%20Report%202025.pdf",
-      "status": "verified"
-    }
-  ],
-  "unavailable_years": [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023],
-  "note": "The official annual reports page lists AADI reports only for 2024 and 2025.",
-  "download_script": "/home/ghiffar-sabda/pratama/handoff/results/download_reports.sh",
-  "completed": true
+  "ticker": "ABDA",
+  "company": "PT Asuransi Bina Dana Arta Tbk",
+  "website": "https://www.myoona.id/",
+  "source_section": "Tentang Kami > Tata Kelola Perusahaan > Laporan Keuangan > Tahunan",
+  "years_found": [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
+  "urls": {
+    "2015": "https://myoona.id/content/dam/oona/content-fragments/id/id/about-us-corporate/laporan-keuangan/tahunan/2015/2015%20-%20ANNUAL%20REPORT.pdf",
+    "2016": "https://myoona.id/content/dam/oona/content-fragments/id/id/about-us-corporate/laporan-keuangan/tahunan/2016/2016%20-%20ANNUAL%20REPORT.pdf",
+    "2017": "https://myoona.id/content/dam/oona/content-fragments/id/id/about-us-corporate/laporan-keuangan/tahunan/2017/2017%20-%20ANNUAL%20REPORT.pdf",
+    "2018": "https://myoona.id/content/dam/oona/content-fragments/id/id/about-us-corporate/laporan-keuangan/tahunan/2018/2018%20-%20Published%20Financial%20Report.pdf",
+    "2019": "https://myoona.id/content/dam/oona/content-fragments/id/id/about-us-corporate/laporan-keuangan/tahunan/2019/2019%20-%20Published%20Financial%20Report.pdf",
+    "2020": "https://myoona.id/content/dam/oona/content-fragments/id/id/about-us-corporate/laporan-keuangan/tahunan/2020/2020%20-%20Published%20Financial%20Report.pdf",
+    "2021": "https://myoona.id/content/dam/oona/content-fragments/id/id/about-us-corporate/laporan-keuangan/tahunan/2021/2021%20-%20ANNUAL%20REPORT.pdf",
+    "2022": "https://myoona.id/content/dam/oona/content-fragments/id/id/about-us-corporate/laporan-keuangan/tahunan/2022/2022%20-%20ANNUAL%20REPORT.pdf",
+    "2023": "https://myoona.id/content/dam/oona/content-fragments/id/id/about-us-corporate/laporan-keuangan/tahunan/2023/Annual%20Report%20SR%202023%20OONA.pdf",
+    "2024": "https://myoona.id/content/dam/oona/content-fragments/id/id/about-us-corporate/laporan-keuangan/tahunan/2024/Annual%20Report%20SR%202024%20OONA.pdf",
+    "2025": "https://myoona.id/content/dam/oona/content-fragments/id/id/about-us-corporate/laporan-keuangan/tahunan/2025/Annual%20Report%20and%20Sustainability%20Report%202025.pdf"
+  },
+  "download_script": "/home/ghiffar-sabda/pratama/handoff/results/urls_temp.sh"
 }

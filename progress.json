@@ -1,19 +1,7 @@
 {
-  "ticker": "AADI",
-  "years": {
-    "2015": "unavailable",
-    "2016": "unavailable",
-    "2017": "unavailable",
-    "2018": "unavailable",
-    "2019": "unavailable",
-    "2020": "unavailable",
-    "2021": "unavailable",
-    "2022": "unavailable",
-    "2023": "unavailable",
-    "2024": "verified",
-    "2025": "verified"
-  },
-  "completed": true,
-  "source": "https://adaroindonesia.com/pages/view/laporan-tahunan.html",
-  "script": "/home/ghiffar-sabda/pratama/handoff/results/download_reports.sh"
+  "ticker": "ABDA",
+  "status": "complete",
+  "urls_extracted": 11,
+  "years": [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
+  "source": "Tentang Kami > Tata Kelola Perusahaan > Laporan Keuangan > Tahunan"
 }
