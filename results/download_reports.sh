@@ -26,3 +26,7 @@ for year in 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025; do
 done
 
 echo "Done. Files in $OUT_DIR"
+
+#!/usr/bin/env bash
+curl -L --fail --retry 3 -o "AADI_2024_Annual_Report.pdf" "https://adaroindonesia.com/app/webroot/upload/files/Laporan%20Tahunan/AADI%20Annual%20Report%202024.pdf"
+curl -L --fail --retry 3 -o "AADI_2025_Annual_Report.pdf" "https://adaroindonesia.com/app/webroot/upload/files/Laporan%20Tahunan/AADI%20Annual%20Report%202025.pdf"

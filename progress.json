@@ -1,7 +1,9 @@
 {
-  "ticker": "ABDA",
+  "ticker": "AADI",
   "status": "complete",
-  "urls_extracted": 11,
-  "years": [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
-  "source": "Tentang Kami > Tata Kelola Perusahaan > Laporan Keuangan > Tahunan"
+  "urls_extracted": 2,
+  "years_requested": [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
+  "years_found": [2024, 2025],
+  "years_not_available": [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023],
+  "source": "Hubungan Investor > Laporan Tahunan"
 }

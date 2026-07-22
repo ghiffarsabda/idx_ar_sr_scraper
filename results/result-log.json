@@ -31,5 +31,44 @@
       "2025": "https://myoona.id/content/dam/oona/content-fragments/id/id/about-us-corporate/laporan-keuangan/tahunan/2025/Annual%20Report%20and%20Sustainability%20Report%202025.pdf"
     },
     "download_script": "/home/ghiffar-sabda/pratama/handoff/results/urls_temp.sh"
+  },
+  {
+    "ticker": "AADI",
+    "company": "PT Adaro Andalan Indonesia Tbk",
+    "website": "https://www.adaroindonesia.com/",
+    "source_section": "Hubungan Investor > Laporan Tahunan",
+    "years_requested": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "years_found": [
+      2024,
+      2025
+    ],
+    "years_not_available": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "urls": {
+      "2024": "https://adaroindonesia.com/app/webroot/upload/files/Laporan%20Tahunan/AADI%20Annual%20Report%202024.pdf",
+      "2025": "https://adaroindonesia.com/app/webroot/upload/files/Laporan%20Tahunan/AADI%20Annual%20Report%202025.pdf"
+    },
+    "download_script": "/home/ghiffar-sabda/pratama/handoff/results/urls_temp.sh"
   }
 ]
