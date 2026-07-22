@@ -93,3 +93,16 @@ curl -sL -o 'results/pdfs/ACES_AR_2020.pdf' 'https://d24vnfmq88m0qc.cloudfront.n
 curl -sL -o 'results/pdfs/ACES_AR_2019.pdf' 'https://d24vnfmq88m0qc.cloudfront.net/file/CAHI/Compro/9cc0f40b-01c1-4825-87f9-90b4b7546794.pdf'
 curl -sL -o 'results/pdfs/ACES_AR_2018.pdf' 'https://d24vnfmq88m0qc.cloudfront.net/file/CAHI/Compro/9b359ead-e43b-4d8f-9670-a31b1a8f8a39.pdf'
 curl -sL -o 'results/pdfs/ACES_AR_2017.pdf' 'https://d24vnfmq88m0qc.cloudfront.net/file/CAHI/Compro/3408903a-c313-4b3e-985d-7a48f68137a8.pdf'
+
+#!/bin/bash
+# ACRO - PT Samcro Hyosung Adilestari Tbk. - Annual Report Download URLs
+# Generated: 2026-07-22
+
+# 2025 Annual Report & Sustainability Report
+curl -sL -o 'results/pdfs/ACRO_AR_2025.pdf' 'https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202604/2a5faf9f01_df2117adb6.pdf'
+
+# 2024 Annual Report & Sustainability Report
+curl -sL -o 'results/pdfs/ACRO_AR_2024.pdf' 'https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202504/8af13c5d68_1a24d50742.pdf'
+
+# 2023 Annual Report & Sustainability Report
+curl -sL -o 'results/pdfs/ACRO_AR_2023.pdf' 'https://samcro.co.id/wp-content/uploads/2023/06/AR-SR-SAMCRO-24-020524-Final.pdf'

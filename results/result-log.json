@@ -533,5 +533,55 @@
       "curl -sL -o 'results/pdfs/ACES_AR_2018.pdf' 'https://d24vnfmq88m0qc.cloudfront.net/file/CAHI/Compro/9b359ead-e43b-4d8f-9670-a31b1a8f8a39.pdf'",
       "curl -sL -o 'results/pdfs/ACES_AR_2017.pdf' 'https://d24vnfmq88m0qc.cloudfront.net/file/CAHI/Compro/3408903a-c313-4b3e-985d-7a48f68137a8.pdf'"
     ]
+  },
+  {
+    "ticker": "ACRO",
+    "company_name": "PT Samcro Hyosung Adilestari Tbk.",
+    "website": "https://samcro.co.id",
+    "status": "completed",
+    "reports_found": [
+      {
+        "year": 2025,
+        "report_type": "Annual Report & Sustainability Report",
+        "title": "PT Samcro Hyosung Adilestari Tbk 2025 Annual Report & Sustainability Report",
+        "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202604/2a5faf9f01_df2117adb6.pdf",
+        "filename": "ACRO_AR_2025.pdf"
+      },
+      {
+        "year": 2024,
+        "report_type": "Annual Report & Sustainability Report",
+        "title": "Annual Report 2024 & Sustainability Report - The Best Quality in The World",
+        "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202504/8af13c5d68_1a24d50742.pdf",
+        "filename": "ACRO_AR_2024.pdf"
+      },
+      {
+        "year": 2023,
+        "report_type": "Annual Report & Sustainability Report",
+        "title": "PT Samcro Hyosung Adilestari Tbk Annual Report & Sustainability Report 2023",
+        "url": "https://samcro.co.id/wp-content/uploads/2023/06/AR-SR-SAMCRO-24-020524-Final.pdf",
+        "filename": "ACRO_AR_2023.pdf"
+      }
+    ],
+    "years_found": [
+      2023,
+      2024,
+      2025
+    ],
+    "years_missing": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022
+    ],
+    "curl_commands": [
+      "curl -sL -o 'results/pdfs/ACRO_AR_2025.pdf' 'https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202604/2a5faf9f01_df2117adb6.pdf'",
+      "curl -sL -o 'results/pdfs/ACRO_AR_2024.pdf' 'https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202504/8af13c5d68_1a24d50742.pdf'",
+      "curl -sL -o 'results/pdfs/ACRO_AR_2023.pdf' 'https://samcro.co.id/wp-content/uploads/2023/06/AR-SR-SAMCRO-24-020524-Final.pdf'"
+    ],
+    "notes": "ACRO IPO'd on IDX in December 2023. Annual reports (combined Annual Report & Sustainability Report) are only available for 2023-2025. Older annual reports (2015-2022) are not publicly available online."
   }
 ]
