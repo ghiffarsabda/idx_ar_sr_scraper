@@ -26,3 +26,22 @@ curl -sL -o 'results/pdfs/AALI_AR_2024.pdf' 'https://www.astra-agro.co.id/wp-con
 curl -sL -o 'results/pdfs/AALI_AR_2023.pdf' 'https://www.astra-agro.co.id/wp-content/uploads/2024/04/Annual-Report-PT-ASTRA-AGRO-LESTARI-Tbk-2023-web.pdf'
 curl -sL -o 'results/pdfs/AALI_AR_2022.pdf' 'https://www.astra-agro.co.id/wp-content/uploads/2023/03/AR-2022-PT-Astra-Agro-Lestari-Tbk.pdf'
 curl -sL -o 'results/pdfs/AALI_AR_2021.pdf' 'https://www.astra-agro.co.id/wp-content/uploads/2022/03/Laporan-Tahunan-AALI-tahun-2021.pdf'
+
+#!/bin/bash
+# Annual Report download commands for ABBA (Mahaka Media Tbk)
+# Generated from https://www.mahakax.com
+
+# 2025 Annual Report
+curl -sL -o 'results/pdfs/ABBA_AR_2025.pdf' 'https://www.mahakax.com/wp-content/uploads/2026/05/Annual-and-Sustainability-Report-ABBA-Tahun-2025.pdf'
+
+# 2024 Annual Report
+curl -sL -o 'results/pdfs/ABBA_AR_2024.pdf' 'https://www.mahakax.com/wp-content/uploads/2025/05/Annual-Report-2024-PT-Mahaka-Media-Tbk.pdf'
+
+# 2023 Annual Report
+curl -sL -o 'results/pdfs/ABBA_AR_2023.pdf' 'https://www.mahakax.com/wp-content/uploads/2024/05/ANNUAL-REPORT-ABBA-2023.pdf'
+
+# 2022 Annual Report
+curl -sL -o 'results/pdfs/ABBA_AR_2022.pdf' 'https://www.mahakax.com/wp-content/uploads/2023/04/ANNUAL-REPORT-2022-PT-Mahaka-Media-Tbk-2022.pdf'
+
+# 2021 Annual Report
+curl -sL -o 'results/pdfs/ABBA_AR_2021.pdf' 'https://www.mahakax.com/wp-content/uploads/2022/07/2021-Annual-Report-PT-Mahaka-Media-Tbk.pdf'

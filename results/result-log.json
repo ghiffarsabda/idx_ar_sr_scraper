@@ -259,5 +259,70 @@
       "curl -sL -o 'results/pdfs/AALI_AR_2022.pdf' 'https://www.astra-agro.co.id/wp-content/uploads/2023/03/AR-2022-PT-Astra-Agro-Lestari-Tbk.pdf'",
       "curl -sL -o 'results/pdfs/AALI_AR_2021.pdf' 'https://www.astra-agro.co.id/wp-content/uploads/2022/03/Laporan-Tahunan-AALI-tahun-2021.pdf'"
     ]
+  },
+  {
+    "ticker": "ABBA",
+    "company_name": "Mahaka Media Tbk",
+    "website": "https://www.mahakax.com",
+    "status": "completed",
+    "reports_found": [
+      {
+        "year": 2025,
+        "report_type": "Annual Report",
+        "title": "2025 - Annual Report - PT Mahaka Media Tbk",
+        "url": "https://www.mahakax.com/wp-content/uploads/2026/05/Annual-and-Sustainability-Report-ABBA-Tahun-2025.pdf",
+        "filename": "ABBA_AR_2025.pdf"
+      },
+      {
+        "year": 2024,
+        "report_type": "Annual Report",
+        "title": "2024 - Annual Report - PT Mahaka Media Tbk",
+        "url": "https://www.mahakax.com/wp-content/uploads/2025/05/Annual-Report-2024-PT-Mahaka-Media-Tbk.pdf",
+        "filename": "ABBA_AR_2024.pdf"
+      },
+      {
+        "year": 2023,
+        "report_type": "Annual Report",
+        "title": "Annual Report 2023 - PT Mahaka Media Tbk",
+        "url": "https://www.mahakax.com/wp-content/uploads/2024/05/ANNUAL-REPORT-ABBA-2023.pdf",
+        "filename": "ABBA_AR_2023.pdf"
+      },
+      {
+        "year": 2022,
+        "report_type": "Annual Report",
+        "title": "Annual Report - PT Mahaka Media Tbk",
+        "url": "https://www.mahakax.com/wp-content/uploads/2023/04/ANNUAL-REPORT-2022-PT-Mahaka-Media-Tbk-2022.pdf",
+        "filename": "ABBA_AR_2022.pdf"
+      },
+      {
+        "year": 2021,
+        "report_type": "Annual Report",
+        "title": "2021 - Annual Report - PT Mahaka Media Tbk",
+        "url": "https://www.mahakax.com/wp-content/uploads/2022/07/2021-Annual-Report-PT-Mahaka-Media-Tbk.pdf",
+        "filename": "ABBA_AR_2021.pdf"
+      }
+    ],
+    "years_found": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "years_missing": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020
+    ],
+    "curl_commands": [
+      "curl -sL -o 'results/pdfs/ABBA_AR_2025.pdf' 'https://www.mahakax.com/wp-content/uploads/2026/05/Annual-and-Sustainability-Report-ABBA-Tahun-2025.pdf'",
+      "curl -sL -o 'results/pdfs/ABBA_AR_2024.pdf' 'https://www.mahakax.com/wp-content/uploads/2025/05/Annual-Report-2024-PT-Mahaka-Media-Tbk.pdf'",
+      "curl -sL -o 'results/pdfs/ABBA_AR_2023.pdf' 'https://www.mahakax.com/wp-content/uploads/2024/05/ANNUAL-REPORT-ABBA-2023.pdf'",
+      "curl -sL -o 'results/pdfs/ABBA_AR_2022.pdf' 'https://www.mahakax.com/wp-content/uploads/2023/04/ANNUAL-REPORT-2022-PT-Mahaka-Media-Tbk-2022.pdf'",
+      "curl -sL -o 'results/pdfs/ABBA_AR_2021.pdf' 'https://www.mahakax.com/wp-content/uploads/2022/07/2021-Annual-Report-PT-Mahaka-Media-Tbk.pdf'"
+    ]
   }
 ]
