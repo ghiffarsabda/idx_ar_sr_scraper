@@ -152,10 +152,14 @@ for company in companies:
         f"When you are done, run {DONE_SCRIPT}"
     )
 
-    # Launch cmd directly in the active SSH TTY session (live TUI progress output)
+    # Launch cmd attached to controlling /dev/tty for live terminal TUI progress
     cmd_args = ["cmd", "--yolo", prompt]
     sys.stdout.flush()
-    subprocess.run(cmd_args)
+    try:
+        with open("/dev/tty", "r") as tty:
+            subprocess.run(cmd_args, stdin=tty)
+    except Exception:
+        subprocess.run(cmd_args)
     sys.stdout.flush()
 
     # 1. Merge urls_temp.sh into main download_reports.sh
