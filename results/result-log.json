@@ -2146,5 +2146,86 @@
       "curl -sL -o 'results/pdfs/AEGS_AR_2024.pdf' 'https://drive.google.com/uc?export=download&id=1w3cxvN9mtMi-Z9nNCZpC4os4iYGyu58c'",
       "curl -sL -o 'results/pdfs/AEGS_AR_2025.pdf' 'https://drive.google.com/uc?export=download&id=17HGMq7OEQzR8LGSr4ZapDJERhENzEUtp'"
     ]
+  },
+  {
+    "ticker": "AGAR",
+    "company_name": "PT Asia Sejahtera Mina Tbk",
+    "website": "https://asiamina.com",
+    "status": "completed",
+    "reports_found": [
+      {
+        "year": 2019,
+        "report_type": "Annual Report",
+        "title": "AGAR ANNUAL REPORT 2019",
+        "url": "https://asiamina.com/files/documents/7427d4b0-e8a6-4a9e-8adb-0c7063dc658f.pdf",
+        "filename": "AGAR_AR_2019.pdf"
+      },
+      {
+        "year": 2020,
+        "report_type": "Annual Report",
+        "title": "ANUAL REPORT AGAR TAHUN 2020",
+        "url": "https://asiamina.com/files/documents/ee559782-d9d2-4691-89bb-50fed21e67c9.pdf",
+        "filename": "AGAR_AR_2020.pdf"
+      },
+      {
+        "year": 2021,
+        "report_type": "Sustainability Report",
+        "title": "SUTAINABLE REPORTING 2021",
+        "url": "https://asiamina.com/files/documents/c59ff3b1-0060-4178-8d0c-f275da1872ef.pdf",
+        "filename": "AGAR_SR_2021.pdf"
+      },
+      {
+        "year": 2022,
+        "report_type": "Annual Report",
+        "title": "LAPORAN TAHUNAN 2022",
+        "url": "https://asiamina.com/files/documents/51e18831-1eb3-434b-a82a-b71d017834a1.pdf",
+        "filename": "AGAR_AR_2022.pdf"
+      },
+      {
+        "year": 2022,
+        "report_type": "Sustainability Report",
+        "title": "LAPORAN KEBERLANJUTAN/SUSTAINABLE REPORTING 2022",
+        "url": "https://asiamina.com/files/documents/cfb8fbd6-a614-45e7-9519-3749b8d4d6fe.pdf",
+        "filename": "AGAR_SR_2022.pdf"
+      },
+      {
+        "year": 2023,
+        "report_type": "Annual Report",
+        "title": "ANNUAL REPORT 2023",
+        "url": "https://asiamina.com/files/documents/de039251-e6b4-4364-bd3d-76d878888800.pdf",
+        "filename": "AGAR_AR_2023.pdf"
+      },
+      {
+        "year": 2023,
+        "report_type": "Sustainability Report",
+        "title": "SUSTAINABILITY REPORT 2023",
+        "url": "https://asiamina.com/files/documents/c837fe02-6151-49cf-9279-753a204b6baf.pdf",
+        "filename": "AGAR_SR_2023.pdf"
+      }
+    ],
+    "years_found": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "years_missing": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2024,
+      2025
+    ],
+    "curl_commands": [
+      "curl -sL -o 'results/pdfs/AGAR_AR_2019.pdf' 'https://asiamina.com/files/documents/7427d4b0-e8a6-4a9e-8adb-0c7063dc658f.pdf'",
+      "curl -sL -o 'results/pdfs/AGAR_AR_2020.pdf' 'https://asiamina.com/files/documents/ee559782-d9d2-4691-89bb-50fed21e67c9.pdf'",
+      "curl -sL -o 'results/pdfs/AGAR_SR_2021.pdf' 'https://asiamina.com/files/documents/c59ff3b1-0060-4178-8d0c-f275da1872ef.pdf'",
+      "curl -sL -o 'results/pdfs/AGAR_AR_2022.pdf' 'https://asiamina.com/files/documents/51e18831-1eb3-434b-a82a-b71d017834a1.pdf'",
+      "curl -sL -o 'results/pdfs/AGAR_SR_2022.pdf' 'https://asiamina.com/files/documents/cfb8fbd6-a614-45e7-9519-3749b8d4d6fe.pdf'",
+      "curl -sL -o 'results/pdfs/AGAR_AR_2023.pdf' 'https://asiamina.com/files/documents/de039251-e6b4-4364-bd3d-76d878888800.pdf'",
+      "curl -sL -o 'results/pdfs/AGAR_SR_2023.pdf' 'https://asiamina.com/files/documents/c837fe02-6151-49cf-9279-753a204b6baf.pdf'"
+    ]
   }
 ]

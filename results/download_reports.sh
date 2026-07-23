@@ -216,3 +216,11 @@ curl -sL -o 'results/pdfs/ADRO_AR_2015.pdf' 'https://www.alamtri.com/files/news/
 curl -sL -o 'results/pdfs/AEGS_AR_2023.pdf' 'https://drive.google.com/uc?export=download&id=1zBOYUFc00Mm2axzJBaX64YF6mfgCbBL2'
 curl -sL -o 'results/pdfs/AEGS_AR_2024.pdf' 'https://drive.google.com/uc?export=download&id=1w3cxvN9mtMi-Z9nNCZpC4os4iYGyu58c'
 curl -sL -o 'results/pdfs/AEGS_AR_2025.pdf' 'https://drive.google.com/uc?export=download&id=17HGMq7OEQzR8LGSr4ZapDJERhENzEUtp'
+
+curl -sL -o 'results/pdfs/AGAR_AR_2019.pdf' 'https://asiamina.com/files/documents/7427d4b0-e8a6-4a9e-8adb-0c7063dc658f.pdf'
+curl -sL -o 'results/pdfs/AGAR_AR_2020.pdf' 'https://asiamina.com/files/documents/ee559782-d9d2-4691-89bb-50fed21e67c9.pdf'
+curl -sL -o 'results/pdfs/AGAR_SR_2021.pdf' 'https://asiamina.com/files/documents/c59ff3b1-0060-4178-8d0c-f275da1872ef.pdf'
+curl -sL -o 'results/pdfs/AGAR_AR_2022.pdf' 'https://asiamina.com/files/documents/51e18831-1eb3-434b-a82a-b71d017834a1.pdf'
+curl -sL -o 'results/pdfs/AGAR_SR_2022.pdf' 'https://asiamina.com/files/documents/cfb8fbd6-a614-45e7-9519-3749b8d4d6fe.pdf'
+curl -sL -o 'results/pdfs/AGAR_AR_2023.pdf' 'https://asiamina.com/files/documents/de039251-e6b4-4364-bd3d-76d878888800.pdf'
+curl -sL -o 'results/pdfs/AGAR_SR_2023.pdf' 'https://asiamina.com/files/documents/c837fe02-6151-49cf-9279-753a204b6baf.pdf'
