@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Shell(which python3 gnome-terminal cmd curl git bash 2>&1; echo \"---\"; python3 --version 2>&1; bash --version 2>&1 | head -1)",
-      "Shell(echo \"DISPLAY=$DISPLAY\"; echo \"XDG_SESSION_TYPE=$XDG_SESSION_TYPE\"; ls -la /home/pratama/idx_ar_sr_scraper/results/ 2>&1; ls /home/pratama/.nvm/versions/node/v24.18.0/lib/node_modules/command-code/dist/bundled/agent-browser/ 2>&1 | head -5)"
+      "Shell(echo \"DISPLAY=$DISPLAY\"; echo \"XDG_SESSION_TYPE=$XDG_SESSION_TYPE\"; ls -la /home/pratama/idx_ar_sr_scraper/results/ 2>&1; ls /home/pratama/.nvm/versions/node/v24.18.0/lib/node_modules/command-code/dist/bundled/agent-browser/ 2>&1 | head -5)",
+      "Shell(agent-browser:*)"
     ],
     "deny": [],
     "defaultMode": "default"

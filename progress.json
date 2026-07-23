@@ -163,5 +163,24 @@
     ],
     "years_missing": [],
     "timestamp": "2026-07-23T05:20:29Z"
+  },
+  "AEGS": {
+    "status": "completed",
+    "years_found": [
+      2023,
+      2024,
+      2025
+    ],
+    "years_missing": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022
+    ],
+    "timestamp": "2026-07-23T16:17:00Z"
   }
 }

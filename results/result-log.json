@@ -2097,5 +2097,54 @@
       "curl -sL -o 'results/pdfs/ADRO_AR_2016.pdf' 'https://www.alamtri.com/files/news/berkas/1207/AR_ADARO%202016%20-%20Final.pdf'",
       "curl -sL -o 'results/pdfs/ADRO_AR_2015.pdf' 'https://www.alamtri.com/files/news/berkas/185/Laporan%20Tahunan%202015.pdf'"
     ]
+  },
+  {
+    "ticker": "AEGS",
+    "company_name": "PT Anugerah Spareparts Sejahtera Tbk.",
+    "website": "https://www.aegisfilter.co.id",
+    "status": "completed",
+    "reports_found": [
+      {
+        "year": 2023,
+        "report_type": "Annual Report",
+        "title": "Annual and Sustainability Report 2023",
+        "url": "https://drive.google.com/uc?export=download&id=1zBOYUFc00Mm2axzJBaX64YF6mfgCbBL2",
+        "filename": "AEGS_AR_2023.pdf"
+      },
+      {
+        "year": 2024,
+        "report_type": "Annual Report",
+        "title": "Annual and Sustainability Report 2024",
+        "url": "https://drive.google.com/uc?export=download&id=1w3cxvN9mtMi-Z9nNCZpC4os4iYGyu58c",
+        "filename": "AEGS_AR_2024.pdf"
+      },
+      {
+        "year": 2025,
+        "report_type": "Annual Report",
+        "title": "Annual and Sustainability Report 2025",
+        "url": "https://drive.google.com/uc?export=download&id=17HGMq7OEQzR8LGSr4ZapDJERhENzEUtp",
+        "filename": "AEGS_AR_2025.pdf"
+      }
+    ],
+    "years_found": [
+      2023,
+      2024,
+      2025
+    ],
+    "years_missing": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022
+    ],
+    "curl_commands": [
+      "curl -sL -o 'results/pdfs/AEGS_AR_2023.pdf' 'https://drive.google.com/uc?export=download&id=1zBOYUFc00Mm2axzJBaX64YF6mfgCbBL2'",
+      "curl -sL -o 'results/pdfs/AEGS_AR_2024.pdf' 'https://drive.google.com/uc?export=download&id=1w3cxvN9mtMi-Z9nNCZpC4os4iYGyu58c'",
+      "curl -sL -o 'results/pdfs/AEGS_AR_2025.pdf' 'https://drive.google.com/uc?export=download&id=17HGMq7OEQzR8LGSr4ZapDJERhENzEUtp'"
+    ]
   }
 ]

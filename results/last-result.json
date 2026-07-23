@@ -1,34 +1,36 @@
 {
-  "ticker": "ADRO",
-  "company_name": "PT Adaro Energy Indonesia Tbk",
-  "website": "https://www.adaro.com",
+  "ticker": "AEGS",
+  "company_name": "PT Anugerah Spareparts Sejahtera Tbk.",
+  "website": "https://www.aegisfilter.co.id",
   "status": "completed",
   "reports_found": [
-    {"year": 2025, "report_type": "Annual Report", "title": "Laporan Tahunan 2025", "url": "https://www.alamtri.com/files/news/berkas/2355/ADRO%20Annual%20Report%202025.pdf", "filename": "ADRO_AR_2025.pdf"},
-    {"year": 2024, "report_type": "Annual Report", "title": "Laporan Tahunan 2024", "url": "https://www.alamtri.com/files/news/berkas/2327/AR%20AlamTri%202024%20-%20web.pdf", "filename": "ADRO_AR_2024.pdf"},
-    {"year": 2023, "report_type": "Annual Report", "title": "Laporan Tahunan 2023", "url": "https://www.alamtri.com/files/news/berkas/2250/AR%20ADARO_23%20FINAL.pdf", "filename": "ADRO_AR_2023.pdf"},
-    {"year": 2022, "report_type": "Annual Report", "title": "Laporan Tahunan 2022", "url": "https://www.alamtri.com/files/news/berkas/2198/AR%20BOOK%20ADARO%20ENERGY%202022%20Final.pdf", "filename": "ADRO_AR_2022.pdf"},
-    {"year": 2021, "report_type": "Annual Report", "title": "Laporan Tahunan 2021", "url": "https://www.alamtri.com/files/news/berkas/2117/ADRO%2020220405%20Laporan%20Tahunan%20AEI%2021.pdf", "filename": "ADRO_AR_2021.pdf"},
-    {"year": 2020, "report_type": "Annual Report", "title": "Laporan Tahunan 2020", "url": "https://www.alamtri.com/files/news/berkas/2036/ADRO%2020210401%20Laporan%20Tahunan%202020.pdf", "filename": "ADRO_AR_2020.pdf"},
-    {"year": 2019, "report_type": "Annual Report", "title": "Laporan Tahunan 2019", "url": "https://www.alamtri.com/files/news/berkas/1915/ADRO%2020200428%20Laporan%20Tahunan%20ADRO%202019.pdf", "filename": "ADRO_AR_2019.pdf"},
-    {"year": 2018, "report_type": "Annual Report", "title": "Laporan Tahunan 2018", "url": "https://www.alamtri.com/files/news/berkas/1648/ADRO%2020190408%20-%20Laporan%20Tahunan%202018%20-%20web.pdf", "filename": "ADRO_AR_2018.pdf"},
-    {"year": 2017, "report_type": "Annual Report", "title": "Laporan Tahunan 2017", "url": "https://www.alamtri.com/files/news/berkas/1376/ADRO%2020180402%20-%20Laporan%20Tahunan%202017%20-%20Blurred.pdf", "filename": "ADRO_AR_2017.pdf"},
-    {"year": 2016, "report_type": "Annual Report", "title": "Laporan Tahunan 2016", "url": "https://www.alamtri.com/files/news/berkas/1207/AR_ADARO%202016%20-%20Final.pdf", "filename": "ADRO_AR_2016.pdf"},
-    {"year": 2015, "report_type": "Annual Report", "title": "Laporan Tahunan 2015", "url": "https://www.alamtri.com/files/news/berkas/185/Laporan%20Tahunan%202015.pdf", "filename": "ADRO_AR_2015.pdf"}
+    {
+      "year": 2023,
+      "report_type": "Annual Report",
+      "title": "Annual and Sustainability Report 2023",
+      "url": "https://drive.google.com/uc?export=download&id=1zBOYUFc00Mm2axzJBaX64YF6mfgCbBL2",
+      "filename": "AEGS_AR_2023.pdf"
+    },
+    {
+      "year": 2024,
+      "report_type": "Annual Report",
+      "title": "Annual and Sustainability Report 2024",
+      "url": "https://drive.google.com/uc?export=download&id=1w3cxvN9mtMi-Z9nNCZpC4os4iYGyu58c",
+      "filename": "AEGS_AR_2024.pdf"
+    },
+    {
+      "year": 2025,
+      "report_type": "Annual Report",
+      "title": "Annual and Sustainability Report 2025",
+      "url": "https://drive.google.com/uc?export=download&id=17HGMq7OEQzR8LGSr4ZapDJERhENzEUtp",
+      "filename": "AEGS_AR_2025.pdf"
+    }
   ],
-  "years_found": [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
-  "years_missing": [],
+  "years_found": [2023, 2024, 2025],
+  "years_missing": [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022],
   "curl_commands": [
-    "curl -sL -o 'results/pdfs/ADRO_AR_2025.pdf' 'https://www.alamtri.com/files/news/berkas/2355/ADRO%20Annual%20Report%202025.pdf'",
-    "curl -sL -o 'results/pdfs/ADRO_AR_2024.pdf' 'https://www.alamtri.com/files/news/berkas/2327/AR%20AlamTri%202024%20-%20web.pdf'",
-    "curl -sL -o 'results/pdfs/ADRO_AR_2023.pdf' 'https://www.alamtri.com/files/news/berkas/2250/AR%20ADARO_23%20FINAL.pdf'",
-    "curl -sL -o 'results/pdfs/ADRO_AR_2022.pdf' 'https://www.alamtri.com/files/news/berkas/2198/AR%20BOOK%20ADARO%20ENERGY%202022%20Final.pdf'",
-    "curl -sL -o 'results/pdfs/ADRO_AR_2021.pdf' 'https://www.alamtri.com/files/news/berkas/2117/ADRO%2020220405%20Laporan%20Tahunan%20AEI%2021.pdf'",
-    "curl -sL -o 'results/pdfs/ADRO_AR_2020.pdf' 'https://www.alamtri.com/files/news/berkas/2036/ADRO%2020210401%20Laporan%20Tahunan%202020.pdf'",
-    "curl -sL -o 'results/pdfs/ADRO_AR_2019.pdf' 'https://www.alamtri.com/files/news/berkas/1915/ADRO%2020200428%20Laporan%20Tahunan%20ADRO%202019.pdf'",
-    "curl -sL -o 'results/pdfs/ADRO_AR_2018.pdf' 'https://www.alamtri.com/files/news/berkas/1648/ADRO%2020190408%20-%20Laporan%20Tahunan%202018%20-%20web.pdf'",
-    "curl -sL -o 'results/pdfs/ADRO_AR_2017.pdf' 'https://www.alamtri.com/files/news/berkas/1376/ADRO%2020180402%20-%20Laporan%20Tahunan%202017%20-%20Blurred.pdf'",
-    "curl -sL -o 'results/pdfs/ADRO_AR_2016.pdf' 'https://www.alamtri.com/files/news/berkas/1207/AR_ADARO%202016%20-%20Final.pdf'",
-    "curl -sL -o 'results/pdfs/ADRO_AR_2015.pdf' 'https://www.alamtri.com/files/news/berkas/185/Laporan%20Tahunan%202015.pdf'"
+    "curl -sL -o 'results/pdfs/AEGS_AR_2023.pdf' 'https://drive.google.com/uc?export=download&id=1zBOYUFc00Mm2axzJBaX64YF6mfgCbBL2'",
+    "curl -sL -o 'results/pdfs/AEGS_AR_2024.pdf' 'https://drive.google.com/uc?export=download&id=1w3cxvN9mtMi-Z9nNCZpC4os4iYGyu58c'",
+    "curl -sL -o 'results/pdfs/AEGS_AR_2025.pdf' 'https://drive.google.com/uc?export=download&id=17HGMq7OEQzR8LGSr4ZapDJERhENzEUtp'"
   ]
 }

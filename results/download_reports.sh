@@ -212,3 +212,7 @@ curl -sL -o 'results/pdfs/ADRO_AR_2018.pdf' 'https://www.alamtri.com/files/news/
 curl -sL -o 'results/pdfs/ADRO_AR_2017.pdf' 'https://www.alamtri.com/files/news/berkas/1376/ADRO%2020180402%20-%20Laporan%20Tahunan%202017%20-%20Blurred.pdf'
 curl -sL -o 'results/pdfs/ADRO_AR_2016.pdf' 'https://www.alamtri.com/files/news/berkas/1207/AR_ADARO%202016%20-%20Final.pdf'
 curl -sL -o 'results/pdfs/ADRO_AR_2015.pdf' 'https://www.alamtri.com/files/news/berkas/185/Laporan%20Tahunan%202015.pdf'
+
+curl -sL -o 'results/pdfs/AEGS_AR_2023.pdf' 'https://drive.google.com/uc?export=download&id=1zBOYUFc00Mm2axzJBaX64YF6mfgCbBL2'
+curl -sL -o 'results/pdfs/AEGS_AR_2024.pdf' 'https://drive.google.com/uc?export=download&id=1w3cxvN9mtMi-Z9nNCZpC4os4iYGyu58c'
+curl -sL -o 'results/pdfs/AEGS_AR_2025.pdf' 'https://drive.google.com/uc?export=download&id=17HGMq7OEQzR8LGSr4ZapDJERhENzEUtp'
