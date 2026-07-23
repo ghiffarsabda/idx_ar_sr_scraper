@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-python3 - "$@" << 'PYEOF'
+python3 -u - "$@" << 'PYEOF'
 import csv
 import json
 import os
@@ -116,7 +116,8 @@ for company in companies:
             break
         continue
 
-    print(f"[{ticker}] Processing {company_name} ({website})...")
+    print(f"[{ticker}] Processing {company_name} ({website})...", flush=True)
+    sys.stdout.flush()
 
     # Clear urls_temp.sh prior to running current ticker
     if os.path.exists(TEMP_DOWNLOAD_SCRIPT):
@@ -151,9 +152,11 @@ for company in companies:
         f"When you are done, run {DONE_SCRIPT}"
     )
 
-    # Launch gnome-terminal running cmd --yolo prompt directly (interactive TUI)
-    cmd_args = ["gnome-terminal", "--wait", "--", "cmd", "--yolo", prompt]
+    # Launch cmd directly in the active SSH TTY session (live TUI progress output)
+    cmd_args = ["cmd", "--yolo", prompt]
+    sys.stdout.flush()
     subprocess.run(cmd_args)
+    sys.stdout.flush()
 
     # 1. Merge urls_temp.sh into main download_reports.sh
     if os.path.exists(TEMP_DOWNLOAD_SCRIPT):
