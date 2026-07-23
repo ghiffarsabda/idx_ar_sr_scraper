@@ -16,6 +16,13 @@ LAST_RESULT = os.path.join(RESULTS_DIR, "last-result.json")
 RESULT_LOG = os.path.join(RESULTS_DIR, "result-log.json")
 DONE_SCRIPT = os.path.join(BASE_DIR, "done.sh")
 CLEAR_SCRIPT = os.path.join(BASE_DIR, "clear.sh")
+ASKPASS_PATH = os.path.join(BASE_DIR, ".git_askpass.sh")
+
+# Ensure SSH askpass script exists to autofill SSH key passphrase
+if not os.path.exists(ASKPASS_PATH):
+    with open(ASKPASS_PATH, "w", encoding="utf-8") as f:
+        f.write('#!/bin/sh\necho "cangcut"\n')
+    os.chmod(ASKPASS_PATH, 0o755)
 
 # Parse command line flags
 is_fresh = "--fresh" in sys.argv or "-f" in sys.argv
@@ -152,14 +159,10 @@ for company in companies:
         f"When you are done, run {DONE_SCRIPT}"
     )
 
-    # Launch cmd attached to controlling /dev/tty for live terminal TUI progress
-    cmd_args = ["cmd", "--yolo", prompt]
+    # Launch cmd with print mode to stream live progress and auto-exit upon completion
+    cmd_args = ["cmd", "-p", "--output-format", "text", "--yolo", prompt]
     sys.stdout.flush()
-    try:
-        with open("/dev/tty", "r") as tty:
-            subprocess.run(cmd_args, stdin=tty)
-    except Exception:
-        subprocess.run(cmd_args)
+    subprocess.run(cmd_args, stdout=sys.stdout, stderr=sys.stderr)
     sys.stdout.flush()
 
     # 1. Merge urls_temp.sh into main download_reports.sh
@@ -204,7 +207,12 @@ for company in companies:
     subprocess.run(["git", "add", "."], cwd=BASE_DIR, check=False)
     subprocess.run(["git", "commit", "-m", f"added {ticker}"], cwd=BASE_DIR, check=False)
     print(f"[{ticker}] Pushing to remote repository...")
-    subprocess.run(["git", "push"], cwd=BASE_DIR, check=False)
+    git_env = os.environ.copy()
+    git_env["SSH_ASKPASS"] = ASKPASS_PATH
+    git_env["SSH_ASKPASS_REQUIRE"] = "force"
+    if not git_env.get("DISPLAY"):
+        git_env["DISPLAY"] = ":0"
+    subprocess.run(["git", "push"], cwd=BASE_DIR, check=False, env=git_env)
     print(f"[{ticker}] Git push completed.")
 
     # Check if last ticker was reached
