@@ -159,10 +159,14 @@ for company in companies:
         f"When you are done, run {DONE_SCRIPT}"
     )
 
-    # Launch cmd with print mode to stream live progress and auto-exit upon completion
-    cmd_args = ["cmd", "-p", "--output-format", "text", "--yolo", prompt]
+    # Launch cmd directly in live TUI mode attached to controlling /dev/tty
+    cmd_args = ["cmd", "--yolo", prompt]
     sys.stdout.flush()
-    subprocess.run(cmd_args, stdout=sys.stdout, stderr=sys.stderr)
+    try:
+        with open("/dev/tty", "r") as tty:
+            subprocess.run(cmd_args, stdin=tty)
+    except Exception:
+        subprocess.run(cmd_args)
     sys.stdout.flush()
 
     # 1. Merge urls_temp.sh into main download_reports.sh
